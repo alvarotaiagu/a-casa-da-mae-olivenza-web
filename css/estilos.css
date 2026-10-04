@@ -552,6 +552,9 @@ html.con-movimiento.densidad-baldosa .suelo.es-visible .suelo__losas i { transfo
 
 /* ═══════════════ cursor propio: punto de tinta + aro azul ═══════════════ */
 html.con-cursor, html.con-cursor * { cursor: none !important; }
+/* dentro de un <dialog> el cursor propio queda oculto tras el backdrop (top layer):
+   restauramos el nativo para que siempre se pueda cerrar el diálogo */
+dialog[open], dialog[open] * { cursor: auto !important; }
 .cursor, .cursor-punto { position: fixed; top: 0; left: 0; border-radius: 50%; pointer-events: none; transition: opacity .25s ease; }
 .cursor {
   z-index: 950; width: 38px; height: 38px; margin: -19px 0 0 -19px;
