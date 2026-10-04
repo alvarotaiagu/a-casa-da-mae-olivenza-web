@@ -1,0 +1,133 @@
+{
+  "origen": {
+    "nombre": "A Casa da Mãe",
+    "direccion": "C/ Díaz Brito (Antiga Rua dos Oleiros) 16, 06100 Olivenza (Badajoz)",
+    "lat": 38.686847,
+    "lon": -7.100989,
+    "metodo": "catastro",
+    "provisional": false,
+    "fuente": "https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCoordenadas.asmx/Consulta_CPMRC?Provincia=&Municipio=&SRS=EPSG%3A4326&RC=5239520PC6853N",
+    "fecha": "2026-10-04",
+    "detalle": {
+      "nota": "Catastro da el centroide de la parcela catastral, no la puerta; se guarda tal cual",
+      "referencia_catastral": "5239520PC6853N0001QQ",
+      "referencia_catastral_14": "5239520PC6853N",
+      "ldt": "CL DIAZ BRITO 16 06100 OLIVENZA (BADAJOZ)",
+      "uso": "Residencial",
+      "superficie_construida_m2": 487,
+      "ano_construccion": 1900,
+      "xcen": "-7.10098865350752",
+      "ycen": "38.686847034142",
+      "srs": "EPSG:4326",
+      "ldt_coordenadas": "CL DIAZ BRITO 16 OLIVENZA (BADAJOZ)",
+      "url_direccion": "https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx/Consulta_DNPLOC?Provincia=BADAJOZ&Municipio=OLIVENZA&Sigla=CL&Calle=DIAZ+BRITO&Numero=16&Bloque=&Escalera=&Planta=&Puerta=",
+      "url_coordenadas": "https://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCoordenadas.asmx/Consulta_CPMRC?Provincia=&Municipio=&SRS=EPSG%3A4326&RC=5239520PC6853N",
+      "comprobacion": "a 4.5 m de la vía 560710210 («Calle Díaz Brito», https://www.openstreetmap.org/way/560710210); umbral 40 m",
+      "distancia_a_la_via_m": 4.5
+    }
+  },
+  "metodo": "recta = haversine; pie = distancia OSRM (routing.openstreetmap.de/routed-foot, perfil foot) 2026-10-04, redondeada a 5 m (sin redondear en pie_osrm_m); minutos = ceil(pie_osrm_m / 80); x_m/y_m = proyección equirectangular local desde el origen en metros (x al este, y al norte), con cos(latitud del origen); coordenadas de los lugares tomadas de la web de la Casa de la Judería (OSM, 2026-10-02)",
+  "fecha": "2026-10-04",
+  "lugares": [
+    {
+      "id": "magdalena",
+      "nombre": "Iglesia de la Magdalena",
+      "lat": 38.686201,
+      "lon": -7.100356,
+      "osm": {
+        "elemento": "way/183313818",
+        "url": "https://www.openstreetmap.org/way/183313818",
+        "punto": "centroide de los 24 nodos de la vía",
+        "fuente": "casa-juderia-olivenza-web/data/lugares.json (OSM, 2026-10-02)"
+      },
+      "recta_m": 90,
+      "pie_m": 100,
+      "pie_osrm_m": 99.4,
+      "minutos": 2,
+      "x_m": 54.9,
+      "y_m": -71.8,
+      "apartamento": "La Magdalena",
+      "linea": "Iglesia de estilo manuelino."
+    },
+    {
+      "id": "puerta-calvario",
+      "nombre": "Puerta del Calvario",
+      "lat": 38.688051,
+      "lon": -7.101764,
+      "osm": {
+        "elemento": "node/10000118795",
+        "url": "https://www.openstreetmap.org/node/10000118795",
+        "punto": "nodo",
+        "fuente": "casa-juderia-olivenza-web/data/lugares.json (OSM, 2026-10-02)"
+      },
+      "recta_m": 150,
+      "pie_m": 160,
+      "pie_osrm_m": 160.6,
+      "minutos": 3,
+      "x_m": -67.3,
+      "y_m": 133.9,
+      "apartamento": "Puerta del Calvario",
+      "linea": "Una de las puertas de la muralla."
+    },
+    {
+      "id": "ayuntamiento",
+      "nombre": "Ayuntamiento (antiguo Palacio de los Duques de Cadaval)",
+      "lat": 38.685547,
+      "lon": -7.100837,
+      "osm": {
+        "elemento": "node/6865900018",
+        "url": "https://www.openstreetmap.org/node/6865900018",
+        "punto": "nodo",
+        "fuente": "casa-juderia-olivenza-web/data/lugares.json (OSM, 2026-10-02)"
+      },
+      "recta_m": 145,
+      "pie_m": 180,
+      "pie_osrm_m": 178,
+      "minutos": 3,
+      "x_m": 13.2,
+      "y_m": -144.6,
+      "apartamento": "Duques de Cadaval",
+      "linea": "El antiguo palacio de los Duques de Cadaval, hoy Ayuntamiento."
+    },
+    {
+      "id": "santa-maria",
+      "nombre": "Iglesia de Santa María del Castillo",
+      "lat": 38.685107,
+      "lon": -7.099602,
+      "osm": {
+        "elemento": "way/560034728",
+        "url": "https://www.openstreetmap.org/way/560034728",
+        "punto": "centroide de los 33 nodos de la vía",
+        "fuente": "casa-juderia-olivenza-web/data/lugares.json (OSM, 2026-10-02)"
+      },
+      "recta_m": 228,
+      "pie_m": 275,
+      "pie_osrm_m": 275.9,
+      "minutos": 4,
+      "x_m": 120.4,
+      "y_m": -193.5,
+      "apartamento": "Santa María del Castillo",
+      "linea": "Junto a la Torre del Homenaje."
+    },
+    {
+      "id": "torre",
+      "nombre": "Torre del Homenaje (Alcázar)",
+      "lat": 38.685303,
+      "lon": -7.099265,
+      "osm": {
+        "elemento": "node/9514512200",
+        "url": "https://www.openstreetmap.org/node/9514512200",
+        "punto": "nodo",
+        "fuente": "casa-juderia-olivenza-web/data/lugares.json (OSM, 2026-10-02)"
+      },
+      "recta_m": 228,
+      "pie_m": 335,
+      "pie_osrm_m": 333,
+      "minutos": 5,
+      "x_m": 149.6,
+      "y_m": -171.7,
+      "apartamento": null,
+      "linea": "La torre del castillo medieval."
+    }
+  ]
+}

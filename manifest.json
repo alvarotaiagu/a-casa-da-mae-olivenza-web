@@ -1,0 +1,9 @@
+{
+ "name": "A Casa da Mãe · Olivenza",
+ "short_name": "A Casa da Mãe",
+ "start_url": "./",
+ "display": "browser",
+ "background_color": "#F7F5F0",
+ "theme_color": "#F7F5F0",
+ "icons": [{ "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

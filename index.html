@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--
+  A Casa da Mãe · C/ Díaz Brito (Antiga Rua dos Oleiros), 16 · 06100 Olivenza (Badajoz)
+  Alojamiento rural (planta baja) y apartamentos turísticos (planta alta).
+  Concepto: «La baldosa». Su logo es la baldosa hidráulica de su propio suelo:
+  una baldosa se dibuja, enlosa la pantalla, se levanta para enseñar la casa y
+  ordena lo demás (retícula, cenefas, placas). La flor es SIEMPRE una baldosa
+  cuadrada en retícula: nunca gira sobre su centro y nada es radial.
+
+  Lo que hay entre marcas <!- - GENERADO:… - -> lo escribe scripts/construir.mjs
+  desde data/*.json y assets/logo/piezas.svg: no se edita a mano.
+  Datos reales y pendientes para el dueño: README.md.
+-->
+<!-- ═══ [MANDO DE MAQUETA] AVISO: esta maqueta lleva un mando de demostración
+     (abajo a la izquierda, solo con ?revision en la URL) que cambia entre dos
+     densidades visuales. NO DEBE VIAJAR A PRODUCCIÓN: node scripts/quitar-mando.mjs
+     fin del bloque [MANDO DE MAQUETA] ═══ -->
+<html lang="es" class="sin-js densidad-baldosa">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Casa da Mãe · Alojamiento rural y apartamentos turísticos en Olivenza</title>
+<meta name="description" content="Casa del siglo XVIII en el casco histórico de Olivenza. Planta baja: alojamiento rural con tres habitaciones dobles, salón con bóvedas y patio con fuente. Planta alta: cuatro apartamentos turísticos con cocina.">
+<meta name="theme-color" content="#F7F5F0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Casa da Mãe · Olivenza">
+<meta property="og:description" content="Alojamiento rural y apartamentos turísticos en una casa del siglo XVIII, a unos pasos de la Magdalena.">
+<meta property="og:image" content="assets/og-a-casa-da-mae.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.json">
+<link rel="preload" href="assets/fuentes/goudy.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fuentes/hanken.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilos.css?v=04693680">
+<script>
+/* Bloqueante a propósito: la clase de JS (y la densidad de la maqueta) se
+   resuelven antes del primer pintado. */
+(function () {
+  var h = document.documentElement;
+  h.classList.remove('sin-js');
+  h.classList.add('con-js');
+  /* red de seguridad: si main.js no llega o se atasca, la cortina se va igual */
+  setTimeout(function () { h.classList.add('cortina-fuera'); }, 7000);
+  /* [MANDO DE MAQUETA] la densidad guardada solo cuenta en modo revisión (?revision) */
+  if (!/[?&]revision\b/.test(location.search)) return;
+  try {
+    var d = localStorage.getItem('casadamae-densidad');
+    if (d === 'sobria' || d === 'baldosa') {
+      h.classList.remove('densidad-baldosa', 'densidad-sobria');
+      h.classList.add('densidad-' + d);
+    }
+  } catch (e) {}
+  /* fin del bloque [MANDO DE MAQUETA] */
+})();
+</script>
+<noscript><style>.cortina{display:none!important}</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "A Casa da Mãe",
+  "description": "Alojamiento rural (tres habitaciones dobles en la planta baja) y cuatro apartamentos turísticos (planta alta) en una casa del siglo XVIII del casco histórico de Olivenza.",
+  "image": "assets/og-a-casa-da-mae.jpg",
+  "telephone": "+34 645 90 29 55",
+  "email": "acasadamae.olivenza@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Díaz Brito, 16",
+    "postalCode": "06100",
+    "addressLocality": "Olivenza",
+    "addressRegion": "Badajoz",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 38.686847, "longitude": -7.100989 },
+  "checkinTime": "14:00",
+  "checkoutTime": "12:00",
+  "petsAllowed": false,
+  "smokingAllowed": false,
+  "knowsLanguage": ["es", "en", "pt"],
+  "sameAs": ["https://www.instagram.com/a.casada.mae/"]
+}
+</script>
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<!-- símbolos: el símbolo del logo (piezas medidas sobre su PNG) y la baldosa (medida sobre su suelo) -->
+<svg class="simbolos" aria-hidden="true" focusable="false">
+  <symbol id="simbolo" viewBox="0 0 200 200">
+<!-- GENERADO:piezas -->
+    <path id="s-disco" class="s-disco" d="M100 43.69A56.31 56.31 0 0 1 100 156.31A56.31 56.31 0 0 1 100 43.69Z"/>
+    <path id="s-flor" class="s-flor" d="M73.15 73.15A26.87 26.87 0 0 1 100 45.41A26.87 26.87 0 0 1 126.85 73.15A26.87 26.87 0 0 1 154.59 100A26.87 26.87 0 0 1 126.85 126.85A26.87 26.87 0 0 1 100 154.59A26.87 26.87 0 0 1 73.15 126.85A26.87 26.87 0 0 1 45.41 100A26.87 26.87 0 0 1 73.15 73.15Z"/>
+    <path id="s-cruz" class="s-cruz" d="M101.34 44.81L101.35 45.75C101.36 46.66 101.91 47.5 102.12 48.38C102.43 49.64 103.01 52.28 103.05 53.5C103.08 54.46 103.03 55.94 103.93 56.53C108.3 55.7 112.09 54.92 116.06 57.66C117.12 58.39 118.78 59.75 118.73 61.17C116.4 61.8 114.22 60.39 109.99 62.21C105.87 63.98 102.62 67.93 101.67 72.3C101.18 74.58 101.35 77.03 101.35 79.36C101.35 81.18 101.16 83.11 101.36 84.91C101.55 86.59 102.78 88.57 102.84 89.2C102.91 89.92 102.12 90.64 101.88 91.29C101.38 92.7 100.91 97.08 101.65 98.35C102.92 99.09 107.3 98.62 108.71 98.12C109.36 97.88 110.08 97.09 110.8 97.16C111.43 97.22 113.41 98.45 115.09 98.64C116.89 98.84 118.82 98.65 120.64 98.65C122.97 98.65 125.42 98.82 127.7 98.33C132.07 97.38 136.02 94.13 137.79 90.01C139.61 85.78 138.2 83.6 138.83 81.27C140.25 81.22 141.61 82.88 142.34 83.94C145.08 87.91 144.3 91.7 143.47 96.07C144.06 96.97 145.54 96.92 146.5 96.95C147.72 96.99 150.36 97.57 151.62 97.88C152.5 98.09 153.34 98.64 154.25 98.65L155.19 98.66L155.19 101.34L154.25 101.35C153.34 101.36 152.5 101.91 151.62 102.12C150.36 102.43 147.72 103.01 146.5 103.05C145.54 103.08 144.06 103.03 143.47 103.93C144.3 108.3 145.08 112.09 142.34 116.06C141.61 117.12 140.25 118.78 138.83 118.73C138.2 116.4 139.61 114.22 137.79 109.99C136.02 105.87 132.07 102.62 127.7 101.67C125.42 101.18 122.97 101.35 120.64 101.35C118.82 101.35 116.89 101.16 115.09 101.36C113.41 101.55 111.43 102.78 110.8 102.84C110.08 102.91 109.36 102.12 108.71 101.88C107.3 101.38 102.92 100.91 101.65 101.65C100.91 102.92 101.38 107.3 101.88 108.71C102.12 109.36 102.91 110.08 102.84 110.8C102.78 111.43 101.55 113.41 101.36 115.09C101.16 116.89 101.35 118.82 101.35 120.64C101.35 122.97 101.18 125.42 101.67 127.7C102.62 132.07 105.87 136.02 109.99 137.79C114.22 139.61 116.4 138.2 118.73 138.83C118.78 140.25 117.12 141.61 116.06 142.34C112.09 145.08 108.3 144.3 103.93 143.47C103.03 144.06 103.08 145.54 103.05 146.5C103.01 147.72 102.43 150.36 102.12 151.62C101.91 152.5 101.36 153.34 101.35 154.25L101.34 155.19L98.66 155.19L98.65 154.25C98.64 153.34 98.09 152.5 97.88 151.62C97.57 150.36 96.99 147.72 96.95 146.5C96.92 145.54 96.97 144.06 96.07 143.47C91.7 144.3 87.91 145.08 83.94 142.34C82.88 141.61 81.22 140.25 81.27 138.83C83.6 138.2 85.78 139.61 90.01 137.79C94.13 136.02 97.38 132.07 98.33 127.7C98.82 125.42 98.65 122.97 98.65 120.64C98.65 118.82 98.84 116.89 98.64 115.09C98.45 113.41 97.22 111.43 97.16 110.8C97.09 110.08 97.88 109.36 98.12 108.71C98.62 107.3 99.09 102.92 98.35 101.65C97.08 100.91 92.7 101.38 91.29 101.88C90.64 102.12 89.92 102.91 89.2 102.84C88.57 102.78 86.59 101.55 84.91 101.36C83.11 101.16 81.18 101.35 79.36 101.35C77.03 101.35 74.58 101.18 72.3 101.67C67.93 102.62 63.98 105.87 62.21 109.99C60.39 114.22 61.8 116.4 61.17 118.73C59.75 118.78 58.39 117.12 57.66 116.06C54.92 112.09 55.7 108.3 56.53 103.93C55.94 103.03 54.46 103.08 53.5 103.05C52.28 103.01 49.64 102.43 48.38 102.12C47.5 101.91 46.66 101.36 45.75 101.35L44.81 101.34L44.81 98.66L45.75 98.65C46.66 98.64 47.5 98.09 48.38 97.88C49.64 97.57 52.28 96.99 53.5 96.95C54.46 96.92 55.94 96.97 56.53 96.07C55.7 91.7 54.92 87.91 57.66 83.94C58.39 82.88 59.75 81.22 61.17 81.27C61.8 83.6 60.39 85.78 62.21 90.01C63.98 94.13 67.93 97.38 72.3 98.33C74.58 98.82 77.03 98.65 79.36 98.65C81.18 98.65 83.11 98.84 84.91 98.64C86.59 98.45 88.57 97.22 89.2 97.16C89.92 97.09 90.64 97.88 91.29 98.12C92.7 98.62 97.08 99.09 98.35 98.35C99.09 97.08 98.62 92.7 98.12 91.29C97.88 90.64 97.09 89.92 97.16 89.2C97.22 88.57 98.45 86.59 98.64 84.91C98.84 83.11 98.65 81.18 98.65 79.36C98.65 77.03 98.82 74.58 98.33 72.3C97.38 67.93 94.13 63.98 90.01 62.21C85.78 60.39 83.6 61.8 81.27 61.17C81.22 59.75 82.88 58.39 83.94 57.66C87.91 54.92 91.7 55.7 96.07 56.53C96.97 55.94 96.92 54.46 96.95 53.5C96.99 52.28 97.57 49.64 97.88 48.38C98.09 47.5 98.64 46.66 98.65 45.75L98.66 44.81Z"/>
+    <path id="s-puntos" class="s-puntos" d="M110.56 87.66A1.78 1.78 0 0 1 110.56 91.22A1.78 1.78 0 0 1 110.56 87.66ZM116.87 80.57A2.56 2.56 0 0 1 116.87 85.69A2.56 2.56 0 0 1 116.87 80.57ZM122.95 75.23A1.82 1.82 0 0 1 122.95 78.87A1.82 1.82 0 0 1 122.95 75.23ZM110.56 108.78A1.78 1.78 0 0 1 110.56 112.34A1.78 1.78 0 0 1 110.56 108.78ZM116.87 114.31A2.56 2.56 0 0 1 116.87 119.43A2.56 2.56 0 0 1 116.87 114.31ZM122.95 121.13A1.82 1.82 0 0 1 122.95 124.77A1.82 1.82 0 0 1 122.95 121.13ZM89.44 108.78A1.78 1.78 0 0 1 89.44 112.34A1.78 1.78 0 0 1 89.44 108.78ZM83.13 114.31A2.56 2.56 0 0 1 83.13 119.43A2.56 2.56 0 0 1 83.13 114.31ZM77.05 121.13A1.82 1.82 0 0 1 77.05 124.77A1.82 1.82 0 0 1 77.05 121.13ZM89.44 87.66A1.78 1.78 0 0 1 89.44 91.22A1.78 1.78 0 0 1 89.44 87.66ZM83.13 80.57A2.56 2.56 0 0 1 83.13 85.69A2.56 2.56 0 0 1 83.13 80.57ZM77.05 75.23A1.82 1.82 0 0 1 77.05 78.87A1.82 1.82 0 0 1 77.05 75.23Z"/>
+    <path id="s-aro" class="s-aro" fill-rule="evenodd" d="M100 4A96 96 0 0 1 100 196A96 96 0 0 1 100 4ZM100 15.33A84.67 84.67 0 0 0 100 184.67A84.67 84.67 0 0 0 100 15.33Z"/>
+    <path id="s-bolas" class="s-bolas" d="M100 15.32A13.78 13.78 0 0 1 100 42.88A13.78 13.78 0 0 1 100 15.32ZM170.9 86.22A13.78 13.78 0 0 1 170.9 113.78A13.78 13.78 0 0 1 170.9 86.22ZM100 157.12A13.78 13.78 0 0 1 100 184.68A13.78 13.78 0 0 1 100 157.12ZM29.1 86.22A13.78 13.78 0 0 1 29.1 113.78A13.78 13.78 0 0 1 29.1 86.22Z"/>
+<!-- /GENERADO:piezas -->
+  </symbol>
+  <symbol id="baldosa" viewBox="0 0 100 100" data-medallon="70.71">
+<!-- GENERADO:baldosa -->
+<rect class="b-fondo" width="100" height="100"/>
+<g id="b-esquinas">
+<g class="b-esquina" data-origen="0 0"><g transform="matrix(1 0 0 1 0 0)"><path class="b-tinta" d="M0 0H34.29A34.29 34.29 0 0 1 0 34.29Z"/><path class="b-fondo" d="M-0.3 12.25a12.55 12.55 0 1 1 25.1 0a12.55 12.55 0 1 1 -25.1 0ZM5.3 4.75a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM-5.5 15.55a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM0 0H14.85V14.85H0ZM0 0H35.29V3.54H0ZM0 0V35.29H3.54V0Z"/><path class="b-tinta" d="M0 0L0 2.47L17.68 2.47L21.21 3.54L23.33 6.01L25.46 7.07L28.28 4.24L31.11 1.41L33.23 0L33.23 0ZM0 0L2.47 0L2.47 17.68L3.54 21.21L6.01 23.33L7.07 25.46L4.24 28.28L1.41 31.11L0 33.23L0 33.23Z"/><path class="b-tinta" d="M5.74 6.79a1.06 1.06 0 1 1 2.11 0a1.06 1.06 0 1 1 -2.11 0ZM9.26 10.81a1.55 1.55 0 1 1 3.1 0a1.55 1.55 0 1 1 -3.1 0ZM13.6 14.67a1.08 1.08 0 1 1 2.15 0a1.08 1.08 0 1 1 -2.15 0Z"/></g></g>
+<g class="b-esquina" data-origen="100 0"><g transform="matrix(-1 0 0 1 100 0)"><path class="b-tinta" d="M0 0H34.29A34.29 34.29 0 0 1 0 34.29Z"/><path class="b-fondo" d="M-0.3 12.25a12.55 12.55 0 1 1 25.1 0a12.55 12.55 0 1 1 -25.1 0ZM5.3 4.75a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM-5.5 15.55a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM0 0H14.85V14.85H0ZM0 0H35.29V3.54H0ZM0 0V35.29H3.54V0Z"/><path class="b-tinta" d="M0 0L0 2.47L17.68 2.47L21.21 3.54L23.33 6.01L25.46 7.07L28.28 4.24L31.11 1.41L33.23 0L33.23 0ZM0 0L2.47 0L2.47 17.68L3.54 21.21L6.01 23.33L7.07 25.46L4.24 28.28L1.41 31.11L0 33.23L0 33.23Z"/><path class="b-tinta" d="M5.74 6.79a1.06 1.06 0 1 1 2.11 0a1.06 1.06 0 1 1 -2.11 0ZM9.26 10.81a1.55 1.55 0 1 1 3.1 0a1.55 1.55 0 1 1 -3.1 0ZM13.6 14.67a1.08 1.08 0 1 1 2.15 0a1.08 1.08 0 1 1 -2.15 0Z"/></g></g>
+<g class="b-esquina" data-origen="0 100"><g transform="matrix(1 0 0 -1 0 100)"><path class="b-tinta" d="M0 0H34.29A34.29 34.29 0 0 1 0 34.29Z"/><path class="b-fondo" d="M-0.3 12.25a12.55 12.55 0 1 1 25.1 0a12.55 12.55 0 1 1 -25.1 0ZM5.3 4.75a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM-5.5 15.55a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM0 0H14.85V14.85H0ZM0 0H35.29V3.54H0ZM0 0V35.29H3.54V0Z"/><path class="b-tinta" d="M0 0L0 2.47L17.68 2.47L21.21 3.54L23.33 6.01L25.46 7.07L28.28 4.24L31.11 1.41L33.23 0L33.23 0ZM0 0L2.47 0L2.47 17.68L3.54 21.21L6.01 23.33L7.07 25.46L4.24 28.28L1.41 31.11L0 33.23L0 33.23Z"/><path class="b-tinta" d="M5.74 6.79a1.06 1.06 0 1 1 2.11 0a1.06 1.06 0 1 1 -2.11 0ZM9.26 10.81a1.55 1.55 0 1 1 3.1 0a1.55 1.55 0 1 1 -3.1 0ZM13.6 14.67a1.08 1.08 0 1 1 2.15 0a1.08 1.08 0 1 1 -2.15 0Z"/></g></g>
+<g class="b-esquina" data-origen="100 100"><g transform="matrix(-1 0 0 -1 100 100)"><path class="b-tinta" d="M0 0H34.29A34.29 34.29 0 0 1 0 34.29Z"/><path class="b-fondo" d="M-0.3 12.25a12.55 12.55 0 1 1 25.1 0a12.55 12.55 0 1 1 -25.1 0ZM5.3 4.75a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM-5.5 15.55a10.25 10.25 0 1 1 20.51 0a10.25 10.25 0 1 1 -20.51 0ZM0 0H14.85V14.85H0ZM0 0H35.29V3.54H0ZM0 0V35.29H3.54V0Z"/><path class="b-tinta" d="M0 0L0 2.47L17.68 2.47L21.21 3.54L23.33 6.01L25.46 7.07L28.28 4.24L31.11 1.41L33.23 0L33.23 0ZM0 0L2.47 0L2.47 17.68L3.54 21.21L6.01 23.33L7.07 25.46L4.24 28.28L1.41 31.11L0 33.23L0 33.23Z"/><path class="b-tinta" d="M5.74 6.79a1.06 1.06 0 1 1 2.11 0a1.06 1.06 0 1 1 -2.11 0ZM9.26 10.81a1.55 1.55 0 1 1 3.1 0a1.55 1.55 0 1 1 -3.1 0ZM13.6 14.67a1.08 1.08 0 1 1 2.15 0a1.08 1.08 0 1 1 -2.15 0Z"/></g></g>
+</g>
+<g id="b-medallon">
+<path id="b-disco" class="b-tinta" data-pieza="s-disco" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" d="M100 43.69A56.31 56.31 0 0 1 100 156.31A56.31 56.31 0 0 1 100 43.69Z"/>
+<path id="b-flor" class="b-fondo" data-pieza="s-flor" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" d="M73.15 73.15A26.87 26.87 0 0 1 100 45.41A26.87 26.87 0 0 1 126.85 73.15A26.87 26.87 0 0 1 154.59 100A26.87 26.87 0 0 1 126.85 126.85A26.87 26.87 0 0 1 100 154.59A26.87 26.87 0 0 1 73.15 126.85A26.87 26.87 0 0 1 45.41 100A26.87 26.87 0 0 1 73.15 73.15Z"/>
+<path id="b-cruz" class="b-tinta" data-pieza="s-cruz" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" d="M101.34 44.81L101.35 45.75C101.36 46.66 101.91 47.5 102.12 48.38C102.43 49.64 103.01 52.28 103.05 53.5C103.08 54.46 103.03 55.94 103.93 56.53C108.3 55.7 112.09 54.92 116.06 57.66C117.12 58.39 118.78 59.75 118.73 61.17C116.4 61.8 114.22 60.39 109.99 62.21C105.87 63.98 102.62 67.93 101.67 72.3C101.18 74.58 101.35 77.03 101.35 79.36C101.35 81.18 101.16 83.11 101.36 84.91C101.55 86.59 102.78 88.57 102.84 89.2C102.91 89.92 102.12 90.64 101.88 91.29C101.38 92.7 100.91 97.08 101.65 98.35C102.92 99.09 107.3 98.62 108.71 98.12C109.36 97.88 110.08 97.09 110.8 97.16C111.43 97.22 113.41 98.45 115.09 98.64C116.89 98.84 118.82 98.65 120.64 98.65C122.97 98.65 125.42 98.82 127.7 98.33C132.07 97.38 136.02 94.13 137.79 90.01C139.61 85.78 138.2 83.6 138.83 81.27C140.25 81.22 141.61 82.88 142.34 83.94C145.08 87.91 144.3 91.7 143.47 96.07C144.06 96.97 145.54 96.92 146.5 96.95C147.72 96.99 150.36 97.57 151.62 97.88C152.5 98.09 153.34 98.64 154.25 98.65L155.19 98.66L155.19 101.34L154.25 101.35C153.34 101.36 152.5 101.91 151.62 102.12C150.36 102.43 147.72 103.01 146.5 103.05C145.54 103.08 144.06 103.03 143.47 103.93C144.3 108.3 145.08 112.09 142.34 116.06C141.61 117.12 140.25 118.78 138.83 118.73C138.2 116.4 139.61 114.22 137.79 109.99C136.02 105.87 132.07 102.62 127.7 101.67C125.42 101.18 122.97 101.35 120.64 101.35C118.82 101.35 116.89 101.16 115.09 101.36C113.41 101.55 111.43 102.78 110.8 102.84C110.08 102.91 109.36 102.12 108.71 101.88C107.3 101.38 102.92 100.91 101.65 101.65C100.91 102.92 101.38 107.3 101.88 108.71C102.12 109.36 102.91 110.08 102.84 110.8C102.78 111.43 101.55 113.41 101.36 115.09C101.16 116.89 101.35 118.82 101.35 120.64C101.35 122.97 101.18 125.42 101.67 127.7C102.62 132.07 105.87 136.02 109.99 137.79C114.22 139.61 116.4 138.2 118.73 138.83C118.78 140.25 117.12 141.61 116.06 142.34C112.09 145.08 108.3 144.3 103.93 143.47C103.03 144.06 103.08 145.54 103.05 146.5C103.01 147.72 102.43 150.36 102.12 151.62C101.91 152.5 101.36 153.34 101.35 154.25L101.34 155.19L98.66 155.19L98.65 154.25C98.64 153.34 98.09 152.5 97.88 151.62C97.57 150.36 96.99 147.72 96.95 146.5C96.92 145.54 96.97 144.06 96.07 143.47C91.7 144.3 87.91 145.08 83.94 142.34C82.88 141.61 81.22 140.25 81.27 138.83C83.6 138.2 85.78 139.61 90.01 137.79C94.13 136.02 97.38 132.07 98.33 127.7C98.82 125.42 98.65 122.97 98.65 120.64C98.65 118.82 98.84 116.89 98.64 115.09C98.45 113.41 97.22 111.43 97.16 110.8C97.09 110.08 97.88 109.36 98.12 108.71C98.62 107.3 99.09 102.92 98.35 101.65C97.08 100.91 92.7 101.38 91.29 101.88C90.64 102.12 89.92 102.91 89.2 102.84C88.57 102.78 86.59 101.55 84.91 101.36C83.11 101.16 81.18 101.35 79.36 101.35C77.03 101.35 74.58 101.18 72.3 101.67C67.93 102.62 63.98 105.87 62.21 109.99C60.39 114.22 61.8 116.4 61.17 118.73C59.75 118.78 58.39 117.12 57.66 116.06C54.92 112.09 55.7 108.3 56.53 103.93C55.94 103.03 54.46 103.08 53.5 103.05C52.28 103.01 49.64 102.43 48.38 102.12C47.5 101.91 46.66 101.36 45.75 101.35L44.81 101.34L44.81 98.66L45.75 98.65C46.66 98.64 47.5 98.09 48.38 97.88C49.64 97.57 52.28 96.99 53.5 96.95C54.46 96.92 55.94 96.97 56.53 96.07C55.7 91.7 54.92 87.91 57.66 83.94C58.39 82.88 59.75 81.22 61.17 81.27C61.8 83.6 60.39 85.78 62.21 90.01C63.98 94.13 67.93 97.38 72.3 98.33C74.58 98.82 77.03 98.65 79.36 98.65C81.18 98.65 83.11 98.84 84.91 98.64C86.59 98.45 88.57 97.22 89.2 97.16C89.92 97.09 90.64 97.88 91.29 98.12C92.7 98.62 97.08 99.09 98.35 98.35C99.09 97.08 98.62 92.7 98.12 91.29C97.88 90.64 97.09 89.92 97.16 89.2C97.22 88.57 98.45 86.59 98.64 84.91C98.84 83.11 98.65 81.18 98.65 79.36C98.65 77.03 98.82 74.58 98.33 72.3C97.38 67.93 94.13 63.98 90.01 62.21C85.78 60.39 83.6 61.8 81.27 61.17C81.22 59.75 82.88 58.39 83.94 57.66C87.91 54.92 91.7 55.7 96.07 56.53C96.97 55.94 96.92 54.46 96.95 53.5C96.99 52.28 97.57 49.64 97.88 48.38C98.09 47.5 98.64 46.66 98.65 45.75L98.66 44.81Z"/>
+<path id="b-puntos" class="b-tinta" data-pieza="s-puntos" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" d="M110.56 87.66A1.78 1.78 0 0 1 110.56 91.22A1.78 1.78 0 0 1 110.56 87.66ZM116.87 80.57A2.56 2.56 0 0 1 116.87 85.69A2.56 2.56 0 0 1 116.87 80.57ZM122.95 75.23A1.82 1.82 0 0 1 122.95 78.87A1.82 1.82 0 0 1 122.95 75.23ZM110.56 108.78A1.78 1.78 0 0 1 110.56 112.34A1.78 1.78 0 0 1 110.56 108.78ZM116.87 114.31A2.56 2.56 0 0 1 116.87 119.43A2.56 2.56 0 0 1 116.87 114.31ZM122.95 121.13A1.82 1.82 0 0 1 122.95 124.77A1.82 1.82 0 0 1 122.95 121.13ZM89.44 108.78A1.78 1.78 0 0 1 89.44 112.34A1.78 1.78 0 0 1 89.44 108.78ZM83.13 114.31A2.56 2.56 0 0 1 83.13 119.43A2.56 2.56 0 0 1 83.13 114.31ZM77.05 121.13A1.82 1.82 0 0 1 77.05 124.77A1.82 1.82 0 0 1 77.05 121.13ZM89.44 87.66A1.78 1.78 0 0 1 89.44 91.22A1.78 1.78 0 0 1 89.44 87.66ZM83.13 80.57A2.56 2.56 0 0 1 83.13 85.69A2.56 2.56 0 0 1 83.13 80.57ZM77.05 75.23A1.82 1.82 0 0 1 77.05 78.87A1.82 1.82 0 0 1 77.05 75.23Z"/>
+<path id="b-aro" class="b-tinta" data-pieza="s-aro" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" fill-rule="evenodd" d="M100 4A96 96 0 0 1 100 196A96 96 0 0 1 100 4ZM100 15.33A84.67 84.67 0 0 0 100 184.67A84.67 84.67 0 0 0 100 15.33Z"/>
+<path id="b-bolas" class="b-tinta" data-pieza="s-bolas" transform="matrix(0.36828 0 0 0.36828 13.17 13.17)" d="M100 15.32A13.78 13.78 0 0 1 100 42.88A13.78 13.78 0 0 1 100 15.32ZM170.9 86.22A13.78 13.78 0 0 1 170.9 113.78A13.78 13.78 0 0 1 170.9 86.22ZM100 157.12A13.78 13.78 0 0 1 100 184.68A13.78 13.78 0 0 1 100 157.12ZM29.1 86.22A13.78 13.78 0 0 1 29.1 113.78A13.78 13.78 0 0 1 29.1 86.22Z"/>
+</g>
+<rect class="b-junta" x=".3" y=".3" width="99.4" height="99.4"/>
+<!-- /GENERADO:baldosa -->
+  </symbol>
+</svg>
+
+<!-- ═══════════════ cortina «enlosar»: se dibuja, se encaja, se replica y se levanta ═══════════════ -->
+<div class="cortina" id="cortina" aria-hidden="true">
+  <div class="cortina__fondo" id="cortina-fondo"></div>
+  <div class="cortina__losas" id="cortina-losas"></div>
+  <div class="cortina__pieza" id="cortina-pieza">
+    <div class="cortina__cuadro" id="cortina-cuadro"></div>
+    <svg class="cortina__esquinas" id="cortina-esquinas" viewBox="0 0 100 100"></svg>
+    <svg class="cortina__simbolo" id="cortina-simbolo" viewBox="0 0 100 100"></svg>
+  </div>
+</div>
+
+<header class="cabecera" id="cabecera">
+  <a class="marca" href="#inicio" aria-label="A Casa da Mãe, inicio">
+    <svg class="marca__simbolo" id="marca-simbolo" viewBox="0 0 200 200" aria-hidden="true"><use href="#simbolo" x="0" y="0" width="200" height="200"/></svg>
+    <span class="marca__texto"><b>A Casa da Mãe</b><small>Olivenza · Olivença</small></span>
+  </a>
+  <button class="cabecera__menu" id="hamburguesa" type="button" aria-expanded="false" aria-controls="menu">
+    <span class="visualmente-oculto">Abrir menú</span>
+    <span class="cabecera__raya" aria-hidden="true"></span><span class="cabecera__raya" aria-hidden="true"></span>
+  </button>
+  <nav class="cabecera__nav" id="menu" aria-label="Principal">
+    <a href="#la-casa">La casa</a>
+    <a href="#planta-baja">Planta baja</a>
+    <a href="#apartamentos">Apartamentos</a>
+    <a href="#a-pie">Olivenza</a>
+    <a href="#opiniones">Opiniones</a>
+    <a class="cabecera__llamar" href="tel:+34645902955">Llamar · 645 90 29 55</a>
+    <a class="cabecera__fechas" href="#fechas">Consultar fechas</a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <!-- ═══════════════ 1 · hero ═══════════════ -->
+  <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+    <div class="hero__texto">
+      <p class="antetitulo">Olivenza · Olivença</p>
+      <h1 class="hero__titulo" id="hero-titulo" data-revelar="letras">Bienvenidos <em>a casa</em>.</h1>
+      <p class="hero__sub">Una casa del siglo XVIII en el casco histórico, a unos pasos de la Magdalena. En la planta baja, alojamiento rural: tres habitaciones dobles bajo bóvedas de ladrillo y un patio con fuente. En la alta, cuatro apartamentos turísticos con cocina.</p>
+      <dl class="hero__datos">
+        <div><dt>habitaciones dobles</dt><dd>3</dd></div>
+        <div><dt>apartamentos</dt><dd>4</dd></div>
+        <div><dt>en Booking</dt><dd>9,6</dd></div>
+      </dl>
+      <div class="hero__acciones">
+        <a class="boton boton--azul iman" href="https://acasadamae.com/reservas-acasadamae/" rel="noopener" target="_blank">Consultar fechas<span class="visualmente-oculto"> (abre su motor de reservas)</span></a>
+        <a class="boton boton--linea" href="tel:+34645902955">Llamar</a>
+      </div>
+    </div>
+    <figure class="hero__suelo" id="hero-suelo">
+      <picture data-foto="boveda-salon-v" data-carga="eager" data-sizes="(max-width: 860px) 100vw, 46vw">
+        <source type="image/avif" srcset="assets/fotos/boveda-salon-v-480.avif 480w, assets/fotos/boveda-salon-v-960.avif 960w, assets/fotos/boveda-salon-v-1200.avif 1200w" sizes="(max-width: 860px) 100vw, 46vw">
+        <source type="image/webp" srcset="assets/fotos/boveda-salon-v-480.webp 480w, assets/fotos/boveda-salon-v-960.webp 960w, assets/fotos/boveda-salon-v-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 46vw">
+        <img src="assets/fotos/boveda-salon-v-1200.jpg" srcset="assets/fotos/boveda-salon-v-480.jpg 480w, assets/fotos/boveda-salon-v-960.jpg 960w, assets/fotos/boveda-salon-v-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 46vw" width="1200" height="1600" alt="Salón comedor bajo bóvedas de ladrillo, con mesas redondas, sofá y lámpara de pie" decoding="async" fetchpriority="high">
+      </picture>
+      <div class="reticula" id="reticula" aria-hidden="true"></div>
+      <figcaption class="visualmente-oculto">Salón comedor de la planta baja, bajo sus bóvedas de ladrillo.</figcaption>
+    </figure>
+  </section>
+  <div class="cenefa cenefa--hero" aria-hidden="true"></div>
+
+  <!-- ═══════════════ 2 · la casa ═══════════════ -->
+  <section class="casa" id="la-casa" aria-labelledby="casa-titulo">
+    <div class="casa__texto">
+      <p class="antetitulo">La casa</p>
+      <h2 id="casa-titulo" data-revelar="palabras">Una casa del XVIII en el <em>casco histórico</em>.</h2>
+      <p>Está en la calle Díaz Brito, la antigua Rua dos Oleiros, a unos pasos de la iglesia de la Magdalena.</p>
+      <p>Abajo, el alojamiento rural, con sus bóvedas de ladrillo y el patio con fuente. Justo encima, cuatro apartamentos turísticos con vistas al casco histórico. Son dos formas de quedarse en la misma casa.</p>
+    </div>
+    <div class="casa__siglo">
+      <p class="siglo" aria-label="Siglo XVIII"><span class="siglo__num" data-romano="18" aria-hidden="true">XVIII</span></p>
+      <p class="siglo__pie">siglo del edificio</p>
+    </div>
+    <figure class="casa__placa destapa">
+      <picture data-foto="placa-calle" data-sizes="(max-width: 860px) 90vw, 30vw">
+        <source type="image/avif" srcset="assets/fotos/placa-calle-480.avif 480w, assets/fotos/placa-calle-960.avif 960w, assets/fotos/placa-calle-1440.avif 1440w" sizes="(max-width: 860px) 90vw, 30vw">
+        <source type="image/webp" srcset="assets/fotos/placa-calle-480.webp 480w, assets/fotos/placa-calle-960.webp 960w, assets/fotos/placa-calle-1440.webp 1440w" sizes="(max-width: 860px) 90vw, 30vw">
+        <img src="assets/fotos/placa-calle-1440.jpg" srcset="assets/fotos/placa-calle-480.jpg 480w, assets/fotos/placa-calle-960.jpg 960w, assets/fotos/placa-calle-1440.jpg 1440w" sizes="(max-width: 860px) 90vw, 30vw" width="1440" height="1440" alt="Placa de azulejo de la calle: «Díaz Brito · Antiga Rua dos Oleiros»" decoding="async" loading="lazy" style="object-position: 50% 50%">
+      </picture>
+      <figcaption>Díaz Brito · Antiga Rua dos Oleiros. Las placas de Olivenza llevan los dos nombres.</figcaption>
+    </figure>
+  </section>
+  <div class="cenefa" aria-hidden="true"></div>
+
+  <!-- ═══════════════ 3 · dos plantas, una casa (anclada en escritorio) ═══════════════ -->
+  <section class="plantas" id="plantas" aria-labelledby="plantas-titulo">
+    <div class="plantas__marco" id="plantas-marco">
+      <div class="plantas__cabeza">
+        <p class="antetitulo">Dos plantas, una casa</p>
+        <h2 id="plantas-titulo" data-revelar="palabras">Abajo y arriba, <em>la misma casa</em>.</h2>
+      </div>
+      <div class="plantas__corte">
+        <svg class="corte" id="corte" viewBox="0 0 800 540" role="img" aria-labelledby="corte-titulo">
+          <title id="corte-titulo">Corte de la casa: abajo, tres habitaciones bajo bóvedas y el patio con su fuente; arriba, cuatro apartamentos bajo el tejado.</title>
+          <defs>
+            <pattern id="juntas" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" class="corte__junta"/></pattern>
+            <pattern id="losas-corte" width="40" height="40" patternUnits="userSpaceOnUse"><use href="#baldosa" x="0" y="0" width="40" height="40"/></pattern>
+          </defs>
+          <!-- planta alta: cuatro apartamentos bajo el tejado -->
+          <g class="corte__planta corte__alta" id="corte-alta">
+            <path class="corte__relleno" d="M60 290V170L270 60L480 170V290Z"/>
+            <path class="corte__losas" d="M60 290V170L270 60L480 170V290Z"/>
+            <path class="corte__trazo" d="M40 180L270 50L500 180M60 290V170M480 170V290M60 290H480M165 290V120M270 290V60M375 290V120"/>
+            <path class="corte__vigas" d="M60 205H480M112 205V180M218 205V180M322 205V180M428 205V180"/>
+            <path class="corte__ventanas" d="M98 236h28v30h-28zM204 236h28v30h-28zM308 236h28v30h-28zM414 236h28v30h-28z"/>
+          </g>
+          <!-- planta baja: tres habitaciones bajo bóvedas y el patio -->
+          <g class="corte__planta corte__baja" id="corte-baja">
+            <path class="corte__relleno" d="M60 480V290H480V480ZM480 480V400H740V480Z"/>
+            <path class="corte__losas" d="M60 480V290H480V480ZM480 480V400H740V480Z"/>
+            <path class="corte__trazo" d="M60 480V290H480V480M480 400H740V480M200 480V300M340 480V300"/>
+            <path class="corte__bovedas" d="M66 380Q66 312 130 312Q194 312 194 380M206 380Q206 312 270 312Q334 312 334 380M346 380Q346 312 410 312Q474 312 474 380"/>
+            <path class="corte__fuente" d="M576 480V452H644V480M592 452V430H628V452M610 430V408M596 412Q610 396 624 412"/>
+            <path class="corte__buganvilla" d="M708 400V352M708 352C680 356 672 330 690 318C684 296 712 286 722 302C744 296 752 322 736 334C744 352 724 360 708 352Z"/>
+          </g>
+          <path class="corte__suelo" d="M20 480H780"/>
+        </svg>
+      </div>
+      <ol class="plantas__lista">
+        <li class="plantas__item" id="item-alta">
+          <p class="plantas__piso">Planta alta · apartamentos turísticos</p>
+          <p>Cuatro apartamentos con cocina, salón y dormitorios, con el nombre de cuatro monumentos de Olivenza.</p>
+          <a class="enlace" href="#apartamentos">Ver los apartamentos</a>
+        </li>
+        <li class="plantas__item" id="item-baja">
+          <p class="plantas__piso">Planta baja · alojamiento rural</p>
+          <p>Tres habitaciones dobles con baño, el salón comedor con bóvedas, una cocina común, la sala de lectura y el patio.</p>
+          <a class="enlace" href="#planta-baja">Ver la planta baja</a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 4 · planta baja: alojamiento rural (arcos de medio punto) ═══════════════ -->
+  <section class="baja" id="planta-baja" aria-labelledby="baja-titulo">
+    <div class="baja__cabeza">
+      <p class="antetitulo">Planta baja · alojamiento rural</p>
+      <h2 id="baja-titulo" data-revelar="palabras">Tres habitaciones <em>bajo las bóvedas</em>.</h2>
+      <p>Tres habitaciones dobles con baño propio; una de ellas está adaptada. Comparten el salón comedor con bóvedas, una cocina para prepararse el desayuno, la sala de lectura y el patio tradicional con su fuente.</p>
+      <ul class="rasgos">
+        <li>Suelo radiante</li><li>Climatización</li><li>Wifi</li><li>Una habitación adaptada</li>
+      </ul>
+    </div>
+<!-- GENERADO:arcos -->
+    <div class="arcos">
+      <figure class="arco">
+        <div class="arco__marco"><div class="arco__ventana"><picture data-foto="boveda-salon" data-sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/avif" srcset="assets/fotos/boveda-salon-480.avif 480w, assets/fotos/boveda-salon-960.avif 960w, assets/fotos/boveda-salon-1440.avif 1440w, assets/fotos/boveda-salon-1920.avif 1920w" sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/webp" srcset="assets/fotos/boveda-salon-480.webp 480w, assets/fotos/boveda-salon-960.webp 960w, assets/fotos/boveda-salon-1440.webp 1440w, assets/fotos/boveda-salon-1920.webp 1920w" sizes="(max-width: 640px) 92vw, 30vw">
+  <img src="assets/fotos/boveda-salon-1920.jpg" srcset="assets/fotos/boveda-salon-480.jpg 480w, assets/fotos/boveda-salon-960.jpg 960w, assets/fotos/boveda-salon-1440.jpg 1440w, assets/fotos/boveda-salon-1920.jpg 1920w" sizes="(max-width: 640px) 92vw, 30vw" width="1920" height="1398" alt="Salón comedor con bóvedas de ladrillo, mesas redondas y un aparador blanco" decoding="async" loading="lazy">
+</picture></div></div>
+        <figcaption>El salón comedor, bajo las bóvedas</figcaption>
+      </figure>
+      <figure class="arco">
+        <div class="arco__marco"><div class="arco__ventana"><picture data-foto="hab-flores" data-sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/avif" srcset="assets/fotos/hab-flores-480.avif 480w, assets/fotos/hab-flores-651.avif 651w" sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/webp" srcset="assets/fotos/hab-flores-480.webp 480w, assets/fotos/hab-flores-651.webp 651w" sizes="(max-width: 640px) 92vw, 30vw">
+  <img src="assets/fotos/hab-flores-651.jpg" srcset="assets/fotos/hab-flores-480.jpg 480w, assets/fotos/hab-flores-651.jpg 651w" sizes="(max-width: 640px) 92vw, 30vw" width="651" height="651" alt="Dormitorio doble bajo bóveda de ladrillo, con papel pintado de flores y cabecero de rejilla" decoding="async" loading="lazy">
+</picture></div></div>
+        <figcaption>Una de las tres habitaciones</figcaption>
+      </figure>
+      <figure class="arco">
+        <div class="arco__marco"><div class="arco__ventana"><picture data-foto="patio" data-sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/avif" srcset="assets/fotos/patio-480.avif 480w, assets/fotos/patio-748.avif 748w" sizes="(max-width: 640px) 92vw, 30vw">
+  <source type="image/webp" srcset="assets/fotos/patio-480.webp 480w, assets/fotos/patio-748.webp 748w" sizes="(max-width: 640px) 92vw, 30vw">
+  <img src="assets/fotos/patio-748.jpg" srcset="assets/fotos/patio-480.jpg 480w, assets/fotos/patio-748.jpg 748w" sizes="(max-width: 640px) 92vw, 30vw" width="748" height="748" alt="Patio encalado con dos buganvillas, retablo de azulejo entre faroles y empedrado" decoding="async" loading="lazy">
+</picture></div></div>
+        <figcaption>El patio, con su fuente</figcaption>
+      </figure>
+    </div>
+<!-- /GENERADO:arcos -->
+    <div class="estancias">
+      <h3>Ver por estancias</h3>
+<!-- GENERADO:estancias -->
+      <ul class="estancias__lista">
+        <li><button class="estancia" type="button" data-estancia="habitaciones"><picture data-foto="hab-flores" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/hab-flores-480.avif 480w, assets/fotos/hab-flores-651.avif 651w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/hab-flores-480.webp 480w, assets/fotos/hab-flores-651.webp 651w" sizes="64px">
+  <img src="assets/fotos/hab-flores-651.jpg" srcset="assets/fotos/hab-flores-480.jpg 480w, assets/fotos/hab-flores-651.jpg 651w" sizes="64px" width="651" height="651" alt="" decoding="async" loading="lazy">
+</picture><b>Habitaciones</b><span>4 fotos</span></button></li>
+        <li><button class="estancia" type="button" data-estancia="salon"><picture data-foto="boveda-salon-v" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/boveda-salon-v-480.avif 480w, assets/fotos/boveda-salon-v-960.avif 960w, assets/fotos/boveda-salon-v-1200.avif 1200w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/boveda-salon-v-480.webp 480w, assets/fotos/boveda-salon-v-960.webp 960w, assets/fotos/boveda-salon-v-1200.webp 1200w" sizes="64px">
+  <img src="assets/fotos/boveda-salon-v-1200.jpg" srcset="assets/fotos/boveda-salon-v-480.jpg 480w, assets/fotos/boveda-salon-v-960.jpg 960w, assets/fotos/boveda-salon-v-1200.jpg 1200w" sizes="64px" width="1200" height="1600" alt="" decoding="async" loading="lazy">
+</picture><b>Salón comedor</b><span>5 fotos</span></button></li>
+        <li><button class="estancia" type="button" data-estancia="cocina"><picture data-foto="cocina" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/cocina-480.avif 480w, assets/fotos/cocina-900.avif 900w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/cocina-480.webp 480w, assets/fotos/cocina-900.webp 900w" sizes="64px">
+  <img src="assets/fotos/cocina-900.jpg" srcset="assets/fotos/cocina-480.jpg 480w, assets/fotos/cocina-900.jpg 900w" sizes="64px" width="900" height="887" alt="" decoding="async" loading="lazy">
+</picture><b>Cocina</b><span>1 foto</span></button></li>
+        <li><button class="estancia" type="button" data-estancia="patio"><picture data-foto="patio" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/patio-480.avif 480w, assets/fotos/patio-748.avif 748w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/patio-480.webp 480w, assets/fotos/patio-748.webp 748w" sizes="64px">
+  <img src="assets/fotos/patio-748.jpg" srcset="assets/fotos/patio-480.jpg 480w, assets/fotos/patio-748.jpg 748w" sizes="64px" width="748" height="748" alt="" decoding="async" loading="lazy">
+</picture><b>Patio</b><span>5 fotos</span></button></li>
+        <li><button class="estancia" type="button" data-estancia="banos"><picture data-foto="bano-pb" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/bano-pb-480.avif 480w, assets/fotos/bano-pb-960.avif 960w, assets/fotos/bano-pb-1440.avif 1440w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/bano-pb-480.webp 480w, assets/fotos/bano-pb-960.webp 960w, assets/fotos/bano-pb-1440.webp 1440w" sizes="64px">
+  <img src="assets/fotos/bano-pb-1440.jpg" srcset="assets/fotos/bano-pb-480.jpg 480w, assets/fotos/bano-pb-960.jpg 960w, assets/fotos/bano-pb-1440.jpg 1440w" sizes="64px" width="1440" height="1440" alt="" decoding="async" loading="lazy">
+</picture><b>Baños</b><span>4 fotos</span></button></li>
+        <li><button class="estancia" type="button" data-estancia="casa"><picture data-foto="pasillo" data-sizes="64px" data-alt="">
+  <source type="image/avif" srcset="assets/fotos/pasillo-480.avif 480w, assets/fotos/pasillo-960.avif 960w, assets/fotos/pasillo-1200.avif 1200w" sizes="64px">
+  <source type="image/webp" srcset="assets/fotos/pasillo-480.webp 480w, assets/fotos/pasillo-960.webp 960w, assets/fotos/pasillo-1200.webp 1200w" sizes="64px">
+  <img src="assets/fotos/pasillo-1200.jpg" srcset="assets/fotos/pasillo-480.jpg 480w, assets/fotos/pasillo-960.jpg 960w, assets/fotos/pasillo-1200.jpg 1200w" sizes="64px" width="1200" height="1691" alt="" decoding="async" loading="lazy">
+</picture><b>La casa</b><span>8 fotos</span></button></li>
+      </ul>
+<!-- /GENERADO:estancias -->
+    </div>
+  </section>
+  <div class="cenefa" aria-hidden="true"></div>
+
+  <!-- ═══════════════ 5 · planta alta: os apartamentos (las cuatro placas) ═══════════════ -->
+  <section class="alta" id="apartamentos" aria-labelledby="alta-titulo">
+    <div class="alta__cabeza">
+      <p class="antetitulo">Planta alta · Os apartamentos</p>
+      <h2 id="alta-titulo" data-revelar="palabras">Cuatro apartamentos, <em>cuatro placas</em>.</h2>
+      <p>Cada apartamento lleva el nombre de un monumento de Olivenza y su placa de azulejo, pintada a mano, en la puerta. <span class="solo-baldosa">Pase el ratón o toque una placa para ver el apartamento.</span></p>
+    </div>
+<!-- GENERADO:placas -->
+    <ul class="placas">
+      <li class="placa" data-apartamento="magdalena">
+        <div class="placa__marco">
+          <div class="placa__giro">
+            <div class="placa__cara placa__cara--frente"><picture data-foto="placa-magdalena" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/placa-magdalena-480.avif 480w, assets/fotos/placa-magdalena-960.avif 960w, assets/fotos/placa-magdalena-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/placa-magdalena-480.webp 480w, assets/fotos/placa-magdalena-960.webp 960w, assets/fotos/placa-magdalena-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/placa-magdalena-1440.jpg" srcset="assets/fotos/placa-magdalena-480.jpg 480w, assets/fotos/placa-magdalena-960.jpg 960w, assets/fotos/placa-magdalena-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="1080" alt="Placa de azulejo pintada a mano con la iglesia y el nombre «La Magdalena»" decoding="async" loading="lazy" style="object-position: 72% 52%">
+</picture></div>
+            <div class="placa__cara placa__cara--tras"><picture data-foto="magdalena-1" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/magdalena-1-480.avif 480w, assets/fotos/magdalena-1-960.avif 960w, assets/fotos/magdalena-1-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/magdalena-1-480.webp 480w, assets/fotos/magdalena-1-960.webp 960w, assets/fotos/magdalena-1-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/magdalena-1-1440.jpg" srcset="assets/fotos/magdalena-1-480.jpg 480w, assets/fotos/magdalena-1-960.jpg 960w, assets/fotos/magdalena-1-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="886" alt="Salón con sofá verde, chimenea eléctrica y techo de ladrillo con vigas" decoding="async" loading="lazy">
+</picture></div>
+          </div>
+        </div>
+        <h3>La Magdalena</h3>
+        <p class="placa__linea">Iglesia de estilo manuelino.</p>
+        <p class="placa__pie" data-lugar="magdalena">A 100 m · 2 min a pie</p>
+        <button class="placa__boton" type="button" data-estancia="magdalena">Ver el apartamento<span class="visualmente-oculto"> La Magdalena</span> · 6 fotos</button>
+      </li>
+      <li class="placa" data-apartamento="cadaval">
+        <div class="placa__marco">
+          <div class="placa__giro">
+            <div class="placa__cara placa__cara--frente"><picture data-foto="placa-cadaval" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/placa-cadaval-480.avif 480w, assets/fotos/placa-cadaval-960.avif 960w, assets/fotos/placa-cadaval-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/placa-cadaval-480.webp 480w, assets/fotos/placa-cadaval-960.webp 960w, assets/fotos/placa-cadaval-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/placa-cadaval-1440.jpg" srcset="assets/fotos/placa-cadaval-480.jpg 480w, assets/fotos/placa-cadaval-960.jpg 960w, assets/fotos/placa-cadaval-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="1080" alt="Placa de azulejo pintada a mano: «Palacio los Duques de Cadaval», n.º 3" decoding="async" loading="lazy" style="object-position: 50% 50%">
+</picture></div>
+            <div class="placa__cara placa__cara--tras"><picture data-foto="cadaval-1" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/cadaval-1-480.avif 480w, assets/fotos/cadaval-1-960.avif 960w, assets/fotos/cadaval-1-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/cadaval-1-480.webp 480w, assets/fotos/cadaval-1-960.webp 960w, assets/fotos/cadaval-1-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/cadaval-1-1440.jpg" srcset="assets/fotos/cadaval-1-480.jpg 480w, assets/fotos/cadaval-1-960.jpg 960w, assets/fotos/cadaval-1-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="997" alt="Dormitorio con papel toile azul, cama de forja y vigas de madera" decoding="async" loading="lazy">
+</picture></div>
+          </div>
+        </div>
+        <h3>Duques de Cadaval</h3>
+        <p class="placa__linea">El antiguo palacio de los Duques de Cadaval, hoy Ayuntamiento.</p>
+        <p class="placa__pie" data-lugar="ayuntamiento">A 180 m · 3 min a pie</p>
+        <button class="placa__boton" type="button" data-estancia="cadaval">Ver el apartamento<span class="visualmente-oculto"> Duques de Cadaval</span> · 6 fotos</button>
+      </li>
+      <li class="placa" data-apartamento="calvario">
+        <div class="placa__marco">
+          <div class="placa__giro">
+            <div class="placa__cara placa__cara--frente"><picture data-foto="placa-calvario" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/placa-calvario-480.avif 480w, assets/fotos/placa-calvario-960.avif 960w, assets/fotos/placa-calvario-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/placa-calvario-480.webp 480w, assets/fotos/placa-calvario-960.webp 960w, assets/fotos/placa-calvario-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/placa-calvario-1440.jpg" srcset="assets/fotos/placa-calvario-480.jpg 480w, assets/fotos/placa-calvario-960.jpg 960w, assets/fotos/placa-calvario-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="1080" alt="Placa de azulejo pintada a mano: «Puerta del Calvario», n.º 4" decoding="async" loading="lazy" style="object-position: 22% 52%">
+</picture></div>
+            <div class="placa__cara placa__cara--tras"><picture data-foto="calvario-1" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/calvario-1-480.avif 480w, assets/fotos/calvario-1-960.avif 960w, assets/fotos/calvario-1-1440.avif 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/calvario-1-480.webp 480w, assets/fotos/calvario-1-960.webp 960w, assets/fotos/calvario-1-1440.webp 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/calvario-1-1440.jpg" srcset="assets/fotos/calvario-1-480.jpg 480w, assets/fotos/calvario-1-960.jpg 960w, assets/fotos/calvario-1-1440.jpg 1440w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1440" height="959" alt="Cocina vista desde la puerta, con barra y taburetes" decoding="async" loading="lazy">
+</picture></div>
+          </div>
+        </div>
+        <h3>Puerta del Calvario</h3>
+        <p class="placa__linea">Una de las puertas de la muralla.</p>
+        <p class="placa__pie" data-lugar="puerta-calvario">A 160 m · 3 min a pie</p>
+        <button class="placa__boton" type="button" data-estancia="calvario">Ver el apartamento<span class="visualmente-oculto"> Puerta del Calvario</span> · 6 fotos</button>
+      </li>
+      <li class="placa" data-apartamento="maria">
+        <div class="placa__marco">
+          <div class="placa__giro">
+            <div class="placa__cara placa__cara--frente"><picture data-foto="placa-santamaria" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/placa-santamaria-480.avif 480w, assets/fotos/placa-santamaria-800.avif 800w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/placa-santamaria-480.webp 480w, assets/fotos/placa-santamaria-800.webp 800w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/placa-santamaria-800.jpg" srcset="assets/fotos/placa-santamaria-480.jpg 480w, assets/fotos/placa-santamaria-800.jpg 800w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="800" height="600" alt="Placa de azulejo pintada a mano: «Santa María del Castillo»" decoding="async" loading="lazy" style="object-position: 58% 58%">
+</picture></div>
+            <div class="placa__cara placa__cara--tras"><picture data-foto="maria-1" data-sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/avif" srcset="assets/fotos/maria-1-480.avif 480w, assets/fotos/maria-1-960.avif 960w, assets/fotos/maria-1-1360.avif 1360w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <source type="image/webp" srcset="assets/fotos/maria-1-480.webp 480w, assets/fotos/maria-1-960.webp 960w, assets/fotos/maria-1-1360.webp 1360w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw">
+  <img src="assets/fotos/maria-1-1360.jpg" srcset="assets/fotos/maria-1-480.jpg 480w, assets/fotos/maria-1-960.jpg 960w, assets/fotos/maria-1-1360.jpg 1360w" sizes="(max-width: 420px) 90vw, (max-width: 1180px) 45vw, 22vw" width="1360" height="912" alt="Salón con sofá amarillo, chimenea eléctrica y techo de ladrillo" decoding="async" loading="lazy">
+</picture></div>
+          </div>
+        </div>
+        <h3>Santa María del Castillo</h3>
+        <p class="placa__linea">Junto a la Torre del Homenaje.</p>
+        <p class="placa__pie" data-lugar="santa-maria">A 275 m · 4 min a pie</p>
+        <button class="placa__boton" type="button" data-estancia="maria">Ver el apartamento<span class="visualmente-oculto"> Santa María del Castillo</span> · 6 fotos</button>
+      </li>
+    </ul>
+<!-- /GENERADO:placas -->
+    <div class="todos">
+      <div class="todos__bloque">
+        <h3>Lo que tienen todos</h3>
+        <ul class="todos__lista">
+          <li>Cocina completa: horno, lavavajillas y vitrocerámica</li>
+          <li>Salón con televisión</li>
+          <li>Dormitorios y baño propio</li>
+          <li>Cuarto de plancha</li>
+          <li>Climatización y wifi</li>
+          <li>Vistas al casco histórico</li>
+        </ul>
+      </div>
+      <div class="todos__bloque dormir">
+        <h3>Cómo dormir</h3>
+        <ul class="dormir__lista">
+          <li><b>Habitación doble con baño</b><span>planta baja</span></li>
+          <li><b>Apartamento de 2 dormitorios</b><span>hasta 6 personas</span></li>
+          <li><b>Apartamento con literas</b><span>hasta 5 personas</span></li>
+          <li><b>Apartamentos de 1 dormitorio</b><span>con sofá cama</span></li>
+        </ul>
+        <p class="nota">Según su ficha de Booking. Cuéntenos cuántos son y le decimos qué apartamento les encaja.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ [MANDO DE MAQUETA] galería completa filtrable: solo existe en la versión sobria ═══ -->
+  <section class="completa" id="galeria-completa" aria-labelledby="completa-titulo">
+    <div class="completa__cabeza">
+      <h2 id="completa-titulo">Todas las fotos</h2>
+      <div class="completa__filtros" id="completa-filtros" role="group" aria-label="Filtrar las fotos"></div>
+    </div>
+    <ul class="completa__rejilla" id="completa-rejilla"></ul>
+  </section>
+  <!-- fin del bloque [MANDO DE MAQUETA] ═══ -->
+  <div class="cenefa" aria-hidden="true"></div>
+
+  <!-- ═══════════════ 6 · bueno saber ═══════════════ -->
+  <section class="saber" id="bueno-saber" aria-labelledby="saber-titulo">
+    <div class="saber__cabeza">
+      <p class="antetitulo">Antes de venir</p>
+      <h2 id="saber-titulo" data-revelar="palabras">Bueno <em>saber</em>.</h2>
+      <p>Pocas normas, para que todos descansen.</p>
+    </div>
+    <dl class="saber__lista">
+      <div><dt>Entrada</dt><dd>De 14:00 a 23:00. Avísenos de su hora de llegada y le esperamos.</dd></div>
+      <div><dt>Salida</dt><dd>De 8:00 a 12:00.</dd></div>
+      <div><dt>Niños</dt><dd>Cuna gratis de 0 a 3 años. No hay camas supletorias.</dd></div>
+      <div><dt>Mascotas</dt><dd>Lo sentimos: no se admiten.</dd></div>
+      <div><dt>Descanso</dt><dd>La casa no admite fiestas ni despedidas, y dentro no se fuma.</dd></div>
+      <div><dt>Idiomas</dt><dd>Español, inglés y portugués.</dd></div>
+    </dl>
+  </section>
+  <div class="cenefa" aria-hidden="true"></div>
+
+  <!-- ═══════════════ 7 · Olivenza a pie: plano en retícula ortogonal ═══════════════ -->
+  <section class="apie" id="a-pie" aria-labelledby="apie-titulo">
+    <div class="apie__cabeza">
+      <p class="antetitulo">Olivenza a pie</p>
+      <h2 id="apie-titulo" data-revelar="palabras">Desde la puerta, <em>cinco minutos</em> o menos.</h2>
+      <p>Distancias andando por la calle desde la casa, medidas sobre OpenStreetMap. Cuatro de estos lugares dan nombre a un apartamento.</p>
+    </div>
+    <div class="apie__cuerpo">
+      <figure class="plano">
+<!-- GENERADO:plano -->
+        <svg viewBox="0 0 360 480" role="img" aria-labelledby="plano-titulo">
+          <title id="plano-titulo">Plano en retícula: la casa y cinco lugares, 1, Iglesia de la Magdalena; 2, Puerta del Calvario; 3, Ayuntamiento (antiguo Palacio de los Duques de Cadaval); 4, Iglesia de Santa María del Castillo; 5, Torre del Homenaje (Alcázar)</title>
+          <rect class="plano__borde" x="1" y="1" width="358" height="478"/>
+          <path class="plano__junta" d="M0 0V480M30 0V480M60 0V480M90 0V480M120 0V480M150 0V480M180 0V480M210 0V480M240 0V480M270 0V480M300 0V480M330 0V480M360 0V480M0 0H360M0 30H360M0 60H360M0 90H360M0 120H360M0 150H360M0 180H360M0 210H360M0 240H360M0 270H360M0 300H360M0 330H360M0 360H360M0 390H360M0 420H360M0 450H360M0 480H360"/>
+          <use href="#baldosa" x="120" y="180" width="30" height="30"/>
+          <text class="plano__casa-rotulo" x="156" y="199">LA CASA</text>
+          <g class="plano__punto plano__punto--apto"><rect x="183" y="273" width="24" height="24"/><text x="195" y="286">1</text></g>
+          <g class="plano__punto plano__punto--apto"><rect x="33" y="33" width="24" height="24"/><text x="45" y="46">2</text></g>
+          <g class="plano__punto plano__punto--apto"><rect x="153" y="363" width="24" height="24"/><text x="165" y="376">3</text></g>
+          <g class="plano__punto plano__punto--apto"><rect x="273" y="423" width="24" height="24"/><text x="285" y="436">4</text></g>
+          <g class="plano__punto"><rect x="303" y="393" width="24" height="24"/><text x="315" y="406">5</text></g>
+        </svg>
+<!-- /GENERADO:plano -->
+        <figcaption>Cada baldosa del plano son 25 m. Norte arriba.</figcaption>
+      </figure>
+<!-- GENERADO:lista-a-pie -->
+      <ol class="lugares">
+        <li class="es-apto"><span class="lugares__n">1</span><b>Iglesia de la Magdalena</b><span class="lugares__dist" data-lugar="magdalena">100 m<small>2 min</small></span><span class="lugares__linea">Iglesia de estilo manuelino.</span><span class="lugares__etiqueta">Da nombre a un apartamento</span></li>
+        <li class="es-apto"><span class="lugares__n">2</span><b>Puerta del Calvario</b><span class="lugares__dist" data-lugar="puerta-calvario">160 m<small>3 min</small></span><span class="lugares__linea">Una de las puertas de la muralla.</span><span class="lugares__etiqueta">Da nombre a un apartamento</span></li>
+        <li class="es-apto"><span class="lugares__n">3</span><b>Ayuntamiento (antiguo Palacio de los Duques de Cadaval)</b><span class="lugares__dist" data-lugar="ayuntamiento">180 m<small>3 min</small></span><span class="lugares__linea">El antiguo palacio de los Duques de Cadaval, hoy Ayuntamiento.</span><span class="lugares__etiqueta">Da nombre a un apartamento</span></li>
+        <li class="es-apto"><span class="lugares__n">4</span><b>Iglesia de Santa María del Castillo</b><span class="lugares__dist" data-lugar="santa-maria">275 m<small>4 min</small></span><span class="lugares__linea">Junto a la Torre del Homenaje.</span><span class="lugares__etiqueta">Da nombre a un apartamento</span></li>
+        <li><span class="lugares__n">5</span><b>Torre del Homenaje (Alcázar)</b><span class="lugares__dist" data-lugar="torre">335 m<small>5 min</small></span><span class="lugares__linea">La torre del castillo medieval.</span></li>
+      </ol>
+<!-- /GENERADO:lista-a-pie -->
+    </div>
+  </section>
+
+  <!-- ═══════════════ 8 · opiniones ═══════════════ -->
+  <section class="opiniones" id="opiniones" aria-labelledby="opiniones-titulo">
+    <div class="opiniones__cabeza">
+      <p class="antetitulo">Opiniones</p>
+      <h2 id="opiniones-titulo" data-revelar="palabras">Lo que cuentan <em>quienes vinieron</em>.</h2>
+      <p class="nota-grande"><b>9,6</b><span>en Booking · 152 comentarios</span></p>
+    </div>
+<!-- GENERADO:categorias -->
+    <ul class="categorias" aria-label="Puntuaciones por categoría en Booking">
+      <li><span>Personal</span><span class="losas" role="img" aria-label="9,8 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.8"></i></span><b>9,8</b></li>
+      <li><span>Instalaciones y servicios</span><span class="losas" role="img" aria-label="9,8 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.8"></i></span><b>9,8</b></li>
+      <li><span>Limpieza</span><span class="losas" role="img" aria-label="9,9 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.9"></i></span><b>9,9</b></li>
+      <li><span>Confort</span><span class="losas" role="img" aria-label="9,8 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.8"></i></span><b>9,8</b></li>
+      <li><span>Relación calidad-precio</span><span class="losas" role="img" aria-label="9,6 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.6"></i></span><b>9,6</b></li>
+      <li><span>Ubicación</span><span class="losas" role="img" aria-label="9,7 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.7"></i></span><b>9,7</b></li>
+      <li><span>WiFi</span><span class="losas" role="img" aria-label="9,5 sobre 10"><i style="--i:0;--p:1"></i><i style="--i:1;--p:1"></i><i style="--i:2;--p:1"></i><i style="--i:3;--p:1"></i><i style="--i:4;--p:1"></i><i style="--i:5;--p:1"></i><i style="--i:6;--p:1"></i><i style="--i:7;--p:1"></i><i style="--i:8;--p:1"></i><i style="--i:9;--p:0.5"></i></span><b>9,5</b></li>
+    </ul>
+<!-- /GENERADO:categorias -->
+    <div class="citas" role="region" aria-label="Citas de opiniones en Booking">
+      <ul class="citas__pista" id="citas-pista">
+        <li><blockquote>«La casa está muy limpia, decorada con muchísimo gusto, no le falta ni un detalle, y la ubicación es excepcional. Sin duda, para repetir y pasar unos dias agradables en Olivenza.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«Los techos son una maravilla, los baños nuevos y muy límpios, las camas cómodas y el patio trasero muy tranquilo por la noche para tomar algo tranquilamente.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«El apartamento es de 10, los detalles están muy cuidados.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«Es un apartamento de ensueño, todo estaba muy bien decorado, con mucho gusto y muy acogedor. Todos los rincones eran bonitos. La acogida por parte de Francisco ha sido muy buena, con sus consejos para comer y para aparcar.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«La amabilidad del dueño. Íbamos a una boda y estaba muy cerca de la Iglesia lo que resultó muy cómodo y rebajó nervios.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«Muy limpio, todos los extras, electrodomésticos y mobiliario nuevo.»</blockquote><span>Opinión en Booking</span></li>
+        <li><blockquote>«Alojamiento cuidado, decorado con buen gusto y cómodo, era lo que necesitábamos por ubicación y espacio.»</blockquote><span>Opinión en Booking</span></li>
+      </ul>
+    </div>
+    <!-- ═══ [MANDO DE MAQUETA] tabla de puntuaciones: solo existe en la versión sobria ═══ -->
+<!-- GENERADO:puntuaciones -->
+    <table class="puntuaciones" id="puntuaciones">
+      <caption>Puntuaciones en Booking · 152 comentarios</caption>
+      <tbody>
+        <tr><th scope="row">Personal</th><td>9,8</td></tr>
+        <tr><th scope="row">Instalaciones y servicios</th><td>9,8</td></tr>
+        <tr><th scope="row">Limpieza</th><td>9,9</td></tr>
+        <tr><th scope="row">Confort</th><td>9,8</td></tr>
+        <tr><th scope="row">Relación calidad-precio</th><td>9,6</td></tr>
+        <tr><th scope="row">Ubicación</th><td>9,7</td></tr>
+        <tr><th scope="row">WiFi</th><td>9,5</td></tr>
+        <tr><th scope="row"><b>Nota global</b></th><td>9,6</td></tr>
+      </tbody>
+    </table>
+<!-- /GENERADO:puntuaciones -->
+    <!-- fin del bloque [MANDO DE MAQUETA] ═══ -->
+  </section>
+
+  <!-- ═══════════════ 9 · consultar fechas ═══════════════ -->
+  <section class="fechas" id="fechas" aria-labelledby="fechas-titulo">
+    <div class="fechas__cabeza">
+      <p class="antetitulo">Consultar fechas</p>
+      <h2 id="fechas-titulo" data-revelar="palabras">Díganos <em>cuándo y cuántos</em>.</h2>
+      <p>Puede ver la disponibilidad en su motor de reservas. Si prefiere preguntar, rellene lo básico y le preparamos el mensaje: nada se envía desde esta página.</p>
+      <a class="boton boton--cal iman" href="https://acasadamae.com/reservas-acasadamae/" rel="noopener" target="_blank">Consultar fechas<span class="visualmente-oculto"> (abre su motor de reservas)</span></a>
+    </div>
+    <form class="reserva" id="reserva" novalidate>
+      <div class="campo"><label for="llegada">Llegada</label><input id="llegada" name="llegada" type="date" required aria-describedby="fechas-error"></div>
+      <div class="campo"><label for="salida">Salida</label><input id="salida" name="salida" type="date" required aria-describedby="fechas-error"></div>
+      <p class="error" id="fechas-error" aria-live="polite"></p>
+      <div class="campo"><label for="adultos">Adultos</label><input id="adultos" name="adultos" type="number" min="1" max="20" value="2" inputmode="numeric"></div>
+      <div class="campo"><label for="ninos">Niños</label><input id="ninos" name="ninos" type="number" min="0" max="12" value="0" inputmode="numeric"></div>
+      <fieldset class="campo campo--radio"><legend>Planta</legend>
+        <label><input type="radio" name="planta" value="baja"> Baja · habitación</label>
+        <label><input type="radio" name="planta" value="alta"> Alta · apartamento</label>
+        <label><input type="radio" name="planta" value="igual" checked> Me da igual</label>
+      </fieldset>
+      <div class="campo campo--ancho"><label for="nombre">Su nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="reserva-error"></div>
+      <div class="campo campo--ancho"><label for="mensaje">Algo más <small>(opcional)</small></label><textarea id="mensaje" name="mensaje" rows="3"></textarea></div>
+      <p class="error" id="reserva-error" aria-live="polite"></p>
+      <button class="boton boton--cal" type="submit">Preparar el mensaje</button>
+    </form>
+    <div class="listo" id="reserva-listo" hidden>
+      <p class="listo__titulo">Su mensaje</p>
+      <pre class="listo__texto" id="reserva-texto"></pre>
+      <div class="listo__acciones">
+        <a class="boton boton--cal" id="reserva-whatsapp" href="https://wa.me/34645902955" rel="noopener" target="_blank">WhatsApp</a>
+        <a class="boton boton--linea" href="tel:+34645902955">Llamar</a>
+        <a class="boton boton--linea" id="reserva-sms" href="sms:+34645902955">SMS</a>
+        <a class="boton boton--linea" id="reserva-email" href="mailto:acasadamae.olivenza@gmail.com">Email</a>
+        <button class="boton boton--linea" type="button" id="reserva-copiar">Copiar</button>
+      </div>
+      <p class="listo__estado" id="reserva-estado" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ 10 · cómo llegar ═══════════════ -->
+  <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+    <div class="contacto__tarjeta">
+      <p class="antetitulo">Cómo llegar</p>
+      <h2 id="contacto-titulo">A Casa da Mãe</h2>
+      <address>
+        <p>Calle Díaz Brito, 16<br><span class="contacto__antiga">Antiga Rua dos Oleiros</span><br>06100 Olivenza (Badajoz)</p>
+        <p><a href="tel:+34645902955">645 90 29 55</a> · teléfono y WhatsApp<br><a href="mailto:acasadamae.olivenza@gmail.com">acasadamae.olivenza@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/a.casada.mae/" rel="noopener" target="_blank">Instagram · @a.casada.mae</a></p>
+      </address>
+    </div>
+    <div class="contacto__mapa">
+      <div class="mapa-consent" id="mapa-consentimiento">
+        <p>El mapa es de Google y, al abrirlo, Google puede usar cookies.</p>
+        <button class="boton boton--linea" type="button" id="mapa-boton">Ver el mapa</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ═══════════════ pie: el suelo se vuelve a enlosar ═══════════════ -->
+<footer class="pie">
+  <div class="suelo" id="suelo" aria-hidden="true">
+    <div class="suelo__losas" id="suelo-losas"></div>
+  </div>
+  <div class="pie__logo">
+    <svg class="pie__simbolo" viewBox="0 0 200 200" aria-hidden="true"><use href="#simbolo" x="0" y="0" width="200" height="200"/></svg>
+    <p class="pie__nombre">A Casa da Mãe</p>
+    <p class="pie__sub">Alojamiento rural y apartamentos turísticos</p>
+    <p class="pie__lugar">Olivenza · Olivença</p>
+    <p class="pie__bienvenida">Sean bienvenidos · Bem-vindos</p>
+  </div>
+  <div class="pie__legal">
+<!-- GENERADO:licencias -->
+<!-- /GENERADO:licencias -->
+    <nav aria-label="Legal">
+      <a href="aviso-legal.html">Aviso legal</a>
+      <a href="privacidad.html">Privacidad y cookies</a>
+      <button type="button" id="cookies-reabrir">Aviso de cookies</button>
+    </nav>
+    <p class="pie__anio">© <span id="anio">2026</span> A Casa da Mãe</p>
+  </div>
+</footer>
+
+<div class="cookies" id="cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p class="cookies__texto">Esta web no usa cookies de seguimiento. Solo recuerda en su navegador que ha visto este aviso. El mapa de Google se carga únicamente si lo pide. <a href="privacidad.html">Más información</a>.</p>
+  <button class="boton boton--azul" type="button" id="cookies-aceptar">Entendido</button>
+</div>
+
+<!-- galería de una estancia o de un apartamento -->
+<dialog class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+  <div class="galeria__cabeza">
+    <h2 id="galeria-titulo">Estancia</h2>
+    <p id="galeria-texto"></p>
+    <button class="galeria__cerrar" type="button" id="galeria-cerrar">Cerrar<span class="visualmente-oculto"> la galería</span></button>
+  </div>
+  <figure class="galeria__foto" id="galeria-foto"></figure>
+  <div class="galeria__pie">
+    <button type="button" id="galeria-antes" aria-label="Foto anterior">←</button>
+    <span id="galeria-cuenta" aria-live="polite"></span>
+    <button type="button" id="galeria-despues" aria-label="Foto siguiente">→</button>
+  </div>
+</dialog>
+
+<!-- ═══ [MANDO DE MAQUETA] SOLO REVISIÓN INTERNA · NO PUBLICAR · lo quita scripts/quitar-mando.mjs ═══ -->
+<div class="mando" id="mando" role="group" aria-label="Versión de la web" hidden>
+  <p class="mando__titulo">Versión</p>
+  <div class="mando__botones">
+    <button type="button" data-densidad="baldosa" aria-pressed="true">La baldosa</button>
+    <button type="button" data-densidad="sobria" aria-pressed="false">Sobria</button>
+  </div>
+  <p class="mando__pie">Dos versiones de la misma web.</p>
+<!-- GENERADO:aviso-mando -->
+  <p class="mando__aviso">Camas por apartamento sin confirmar · licencias sin confirmar · n.º 16 geolocalizado: sí (Catastro)</p>
+<!-- /GENERADO:aviso-mando -->
+</div>
+<!-- fin del bloque [MANDO DE MAQUETA] ═══ -->
+
+<script type="application/json" id="datos-fotos">[{"id":"boveda-salon-v","estancia":"salon","alt":"Salón comedor bajo bóvedas de ladrillo, con mesas redondas, sofá y lámpara de pie","w":1200,"h":1600,"anchos":[480,960,1200]},{"id":"boveda-salon","estancia":"salon","alt":"Salón comedor con bóvedas de ladrillo, mesas redondas y un aparador blanco","w":2400,"h":1747,"anchos":[480,960,1440,1920]},{"id":"boveda-mesa","estancia":"salon","alt":"Comedor bajo arcos de ladrillo, con mesas redondas, sillas blancas y suelo hidráulico azul","w":1200,"h":1600,"anchos":[480,960,1200]},{"id":"salon-arco","estancia":"salon","alt":"Arco de ladrillo que da paso al salón comedor, con mesas redondas al fondo","w":900,"h":1600,"anchos":[480,900]},{"id":"boveda-detalle","estancia":"salon","alt":"Detalle de la bóveda de ladrillo del salón","w":2199,"h":2199,"anchos":[480,960,1440]},{"id":"hab-flores","estancia":"habitaciones","alt":"Dormitorio doble bajo bóveda de ladrillo, con papel pintado de flores y cabecero de rejilla","w":651,"h":651,"anchos":[480,651]},{"id":"hab-azul","estancia":"habitaciones","alt":"Dormitorio doble con colcha azul, cabecero de rejilla y el baño al fondo","w":1200,"h":1600,"anchos":[480,960,1200]},{"id":"hab-toile-rojo","estancia":"habitaciones","alt":"Pared de un dormitorio con papel toile rojo, aplique de globo y cabecero de rejilla","w":1897,"h":1897,"anchos":[480,960,1440]},{"id":"hab-armario","estancia":"habitaciones","alt":"Dormitorio bajo bóveda de ladrillo, con armario blanco de dos puertas","w":798,"h":821,"anchos":[480,798]},{"id":"bano-pb","estancia":"banos","alt":"Baño con ducha de mampara, espejo redondo y azulejo azul y blanco","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"bano-ducha","estancia":"banos","alt":"Ducha con grifería dorada y pared de azulejo azul y blanco","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"bano-corredera","estancia":"banos","alt":"Baño con puerta corredera, lavabo sobre balda de madera y espejo redondo","w":2180,"h":2180,"anchos":[480,960,1440]},{"id":"bano-boveda","estancia":"banos","alt":"Baño bajo bóveda de ladrillo, con hornacina de azulejo azul y suelo de madera","w":900,"h":1600,"anchos":[480,900]},{"id":"cocina","estancia":"cocina","alt":"Cocina común con muebles de madera, lavadora, lavavajillas y suelo hidráulico azul","w":900,"h":887,"anchos":[480,900]},{"id":"patio","estancia":"patio","alt":"Patio encalado con dos buganvillas, retablo de azulejo entre faroles y empedrado","w":748,"h":748,"anchos":[480,748]},{"id":"azulejo-cristo","estancia":"patio","alt":"Retablo de azulejo azul con Cristo cargando la cruz, entre dos faroles","w":2196,"h":2126,"anchos":[480,960,1440]},{"id":"empedrado","estancia":"patio","alt":"Empedrado de piedra blanca y negra del patio","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"arco-patio","estancia":"patio","alt":"Arco de ladrillo y puerta acristalada que da al patio con buganvillas","w":2363,"h":2400,"anchos":[480,960,1440]},{"id":"reja-patio","estancia":"patio","alt":"Puerta al patio con reja de forja de monograma","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"pasillo","estancia":"casa","alt":"Pasillo con suelo hidráulico azul y blanco, zócalo azul y arco al fondo","w":1200,"h":1691,"anchos":[480,960,1200]},{"id":"recibidor","estancia":"casa","alt":"Pasillo con consola, lámpara de flecos y flores, bajo bóveda de ladrillo","w":1200,"h":1600,"anchos":[480,960,1200]},{"id":"pasillo-entrada","estancia":"casa","alt":"Pasillo de la planta baja hacia la puerta de entrada de madera","w":1200,"h":1624,"anchos":[480,960,1200]},{"id":"entrada","estancia":"casa","alt":"Puerta de madera abierta hacia el pasillo, bajo bóveda de ladrillo","w":1199,"h":1760,"anchos":[480,960,1199]},{"id":"reja","estancia":"casa","alt":"Pasillo visto a través de una reja de forja","w":1200,"h":1600,"anchos":[480,960,1200]},{"id":"fachada","estancia":"casa","alt":"Fachada encalada con reja de forja y placa de alojamiento","w":1600,"h":1200,"anchos":[480,960,1440]},{"id":"calle","estancia":"casa","alt":"Calle encalada y empedrada, con la puerta de la casa a la izquierda","w":1600,"h":1200,"anchos":[480,960,1440]},{"id":"baldosa","estancia":"casa","alt":"Baldosa hidráulica azul y blanca del suelo, con flor de cuatro lóbulos","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"magdalena-1","estancia":"magdalena","alt":"Salón con sofá verde, chimenea eléctrica y techo de ladrillo con vigas","w":2400,"h":1476,"anchos":[480,960,1440]},{"id":"magdalena-2","estancia":"magdalena","alt":"Salón comedor con mesa redonda, chimenea eléctrica y alacena blanca","w":2400,"h":1457,"anchos":[480,960,1440]},{"id":"magdalena-3","estancia":"magdalena","alt":"Baño con mueble de lavabo verde, ducha y azulejo de dibujo","w":2400,"h":1462,"anchos":[480,960,1440]},{"id":"magdalena-4","estancia":"magdalena","alt":"Dormitorio con colcha de flores, armario blanco y ventana","w":2400,"h":1475,"anchos":[480,960,1440]},{"id":"magdalena-5","estancia":"magdalena","alt":"Dormitorio con cabecero rosa y colcha de flores, bajo techo de ladrillo","w":2400,"h":1462,"anchos":[480,960,1440]},{"id":"magdalena-6","estancia":"magdalena","alt":"Cocina con horno, microondas, frigorífico y encimera de madera","w":2400,"h":1503,"anchos":[480,960,1440]},{"id":"cadaval-1","estancia":"cadaval","alt":"Dormitorio con papel toile azul, cama de forja y vigas de madera","w":2153,"h":1490,"anchos":[480,960,1440]},{"id":"cadaval-2","estancia":"cadaval","alt":"Salón con sofá azul oscuro, mesa de comedor y vigas de madera","w":2153,"h":1530,"anchos":[480,960,1440]},{"id":"cadaval-3","estancia":"cadaval","alt":"Comedor con mesa de madera, estantería blanca y chimenea eléctrica","w":2153,"h":1544,"anchos":[480,960,1440]},{"id":"cadaval-4","estancia":"cadaval","alt":"Salón con sofá, butacas blancas y mesa de comedor de madera","w":2153,"h":1490,"anchos":[480,960,1440]},{"id":"cadaval-5","estancia":"cadaval","alt":"Dormitorio con camas individuales y papel de cuadros","w":2153,"h":1521,"anchos":[480,960,1440]},{"id":"cadaval-6","estancia":"cadaval","alt":"Cocina con muebles azul oscuro, campana y lavavajillas","w":2153,"h":1528,"anchos":[480,960,1440]},{"id":"calvario-1","estancia":"calvario","alt":"Cocina vista desde la puerta, con barra y taburetes","w":2127,"h":1416,"anchos":[480,960,1440]},{"id":"calvario-2","estancia":"calvario","alt":"Salón con cocina abierta, barra, frigorífico y televisor","w":2127,"h":1438,"anchos":[480,960,1440]},{"id":"calvario-3","estancia":"calvario","alt":"Dormitorio con colcha estampada y toallas naranjas","w":2127,"h":1470,"anchos":[480,960,1440]},{"id":"calvario-4","estancia":"calvario","alt":"Dormitorio con cabecero capitoné blanco y pared terracota","w":2127,"h":1452,"anchos":[480,960,1440]},{"id":"calvario-5","estancia":"calvario","alt":"Baño con espejo redondo, lavabo y ducha","w":2127,"h":1427,"anchos":[480,960,1440]},{"id":"calvario-6","estancia":"calvario","alt":"Salón con papel pintado de flores, mesa y televisor","w":2127,"h":1389,"anchos":[480,960,1440]},{"id":"maria-1","estancia":"maria","alt":"Salón con sofá amarillo, chimenea eléctrica y techo de ladrillo","w":1360,"h":912,"anchos":[480,960,1360]},{"id":"maria-2","estancia":"maria","alt":"Baño con ducha y azulejo de dibujo azul y naranja","w":1360,"h":900,"anchos":[480,960,1360]},{"id":"maria-3","estancia":"maria","alt":"Cocina con mesa alta, taburetes amarillos y suelo de baldosa","w":1360,"h":963,"anchos":[480,960,1360]},{"id":"maria-4","estancia":"maria","alt":"Dormitorio con cabecero tapizado y papel pintado de ramas","w":1360,"h":900,"anchos":[480,960,1360]},{"id":"maria-5","estancia":"maria","alt":"Dormitorio con litera blanca y armario","w":1360,"h":900,"anchos":[480,960,1360]},{"id":"maria-6","estancia":"maria","alt":"Dormitorio con cama de matrimonio, toallas amarillas y papel de flores","w":1360,"h":900,"anchos":[480,960,1360]},{"id":"placa-magdalena","estancia":"placas","alt":"Placa de azulejo pintada a mano con la iglesia y el nombre «La Magdalena»","w":1600,"h":1200,"anchos":[480,960,1440]},{"id":"placa-cadaval","estancia":"placas","alt":"Placa de azulejo pintada a mano: «Palacio los Duques de Cadaval», n.º 3","w":1600,"h":1200,"anchos":[480,960,1440]},{"id":"placa-calvario","estancia":"placas","alt":"Placa de azulejo pintada a mano: «Puerta del Calvario», n.º 4","w":1600,"h":1200,"anchos":[480,960,1440]},{"id":"placa-santamaria","estancia":"placas","alt":"Placa de azulejo pintada a mano: «Santa María del Castillo»","w":800,"h":600,"anchos":[480,800]},{"id":"placa-calle","estancia":"placas","alt":"Placa de azulejo de la calle: «Díaz Brito · Antiga Rua dos Oleiros»","w":2400,"h":2400,"anchos":[480,960,1440]},{"id":"tejados","estancia":"alta","alt":"Tejados de teja y fachadas encaladas bajo el cielo azul","w":1920,"h":1920,"anchos":[480,960,1440]},{"id":"buhardilla","estancia":"alta","alt":"Techo inclinado con viga de madera y papel toile","w":1920,"h":1920,"anchos":[480,960,1440]},{"id":"toile-azul","estancia":"alta","alt":"Detalle del papel pintado toile azul de un apartamento","w":1920,"h":1920,"anchos":[480,960,1440]}]</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="js/main.js?v=75e531d2" defer></script>
+</body>
+</html>

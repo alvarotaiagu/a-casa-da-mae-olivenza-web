@@ -1,0 +1,31 @@
+{
+  "_nota": "Datos de contacto y reserva. Hay una copia de respaldo en js/main.js (CONFIG) por si este JSON no llega. Las licencias van a null hasta que el dueño las confirme: el pie solo las pinta si no son null (lo hace scripts/construir.mjs).",
+  "nombre": "A Casa da Mãe",
+  "telefono": "645 90 29 55",
+  "telefonoEnlace": "+34645902955",
+  "whatsapp": "34645902955",
+  "email": "acasadamae.olivenza@gmail.com",
+  "instagram": "a.casada.mae",
+  "motor": "https://acasadamae.com/reservas-acasadamae/",
+  "motor_nota": "Motor de MrPlan incrustado en su web (id_casa=584167), comprobado el 2026-10-04. Mientras siga vivo, el botón «Consultar fechas» lleva aquí.",
+  "licencias": null,
+  "licencias_sin_confirmar": {
+    "fuente": "Ficha de Booking, leída el 2026-10-04",
+    "valores": ["AT-BA-003533", "TR-BA-00297", "TR-BA-00299"],
+    "duda": "AT-BA-003533 parece llevar un dígito de más. Ni la placa de la fachada ni su web publican número."
+  },
+  "booking": {
+    "nota": 9.6,
+    "comentarios": 152,
+    "categorias": [
+      ["Personal", 9.8],
+      ["Instalaciones y servicios", 9.8],
+      ["Limpieza", 9.9],
+      ["Confort", 9.8],
+      ["Relación calidad-precio", 9.6],
+      ["Ubicación", 9.7],
+      ["WiFi", 9.5]
+    ],
+    "fecha": "2026-10-04"
+  }
+}

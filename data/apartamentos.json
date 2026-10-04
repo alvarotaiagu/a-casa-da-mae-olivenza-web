@@ -1,0 +1,53 @@
+{
+  "_nota": "Los cuatro apartamentos de la planta alta. Booking da las camas por número de apartamento (1, 2, 4 y «de 2 dormitorios»), no por nombre. La correspondencia de abajo es PROBABLE y no se muestra en la web mientras confirmado sea false: la web solo enseña el bloque general «Cómo dormir». El mando de maqueta lo avisa.",
+  "confirmado": false,
+  "fuente": "Ficha de Booking leída el 2026-10-04 (ref/booking/booking-2026-10-04.txt) y las fotos de cada galería",
+  "apartamentos": [
+    {
+      "id": "magdalena",
+      "nombre": "La Magdalena",
+      "lugar": "magdalena",
+      "placa_numero": null,
+      "fotos": "magdalena-1…6",
+      "unidad_booking_probable": null,
+      "camas_probables": null,
+      "indicio": "Ninguno claro."
+    },
+    {
+      "id": "cadaval",
+      "nombre": "Duques de Cadaval",
+      "lugar": "ayuntamiento",
+      "placa_numero": 3,
+      "fotos": "cadaval-1…6",
+      "unidad_booking_probable": "Apartamento de 2 dormitorios",
+      "camas_probables": "1 doble, 2 individuales y sofá cama · hasta 6",
+      "indicio": "Placa n.º 3; sus fotos enseñan camas individuales."
+    },
+    {
+      "id": "calvario",
+      "nombre": "Puerta del Calvario",
+      "lugar": "puerta-calvario",
+      "placa_numero": 4,
+      "fotos": "calvario-1…6",
+      "unidad_booking_probable": "Apartamento 4",
+      "camas_probables": "1 doble y sofá cama",
+      "indicio": "Placa n.º 4."
+    },
+    {
+      "id": "maria",
+      "nombre": "Santa María del Castillo",
+      "lugar": "santa-maria",
+      "placa_numero": null,
+      "fotos": "maria-1…6",
+      "unidad_booking_probable": "Apartamento 1",
+      "camas_probables": "1 doble, 2 literas y sofá cama · hasta 5",
+      "indicio": "Las literas salen en sus fotos. En Google aparece como «casa de cuatro dormitorios» (Vrbo), que choca con Booking: no se usa."
+    }
+  ],
+  "como_dormir": [
+    "Habitación doble con baño (planta baja)",
+    "Apartamento de 2 dormitorios, hasta 6 personas",
+    "Apartamento con literas, hasta 5 personas",
+    "Apartamentos de 1 dormitorio con sofá cama"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+ "fuente": "ref/web/202_16.jpg (2521 px, frontal), umbral local g < 0,8·fondo; medido con scripts/medir-baldosa.py el 2026-10-04",
+ "suelo": "hexagonal: círculos tangentes en retícula triangular (medallones y flores grandes alternos)",
+ "R_px": 347.5,
+ "medallon": {
+  "centro_px": [
+   1341.5,
+   1065.5
+  ],
+  "aro_interior_R": 0.8718,
+  "aro_exterior_R": 1.0,
+  "grosor_aro_R": 0.1079,
+  "bola_radio_R": 0.1325,
+  "bola_distancia_R": 0.7223,
+  "bolas_halladas": 3,
+  "tramos_diagonal_px": [
+   [
+    0,
+    3
+   ],
+   [
+    45,
+    55
+   ],
+   [
+    73,
+    89
+   ],
+   [
+    107,
+    116
+   ],
+   [
+    134,
+    190
+   ],
+   [
+    194,
+    195
+   ],
+   [
+    301,
+    340
+   ]
+  ]
+ },
+ "flor_grande": {
+  "centro_px": [
+   651.3,
+   1069.1
+  ],
+  "radio_R": 0.9514,
+  "tramos_diagonal_R": [
+   [
+    0.0,
+    0.04
+   ],
+   [
+    0.239,
+    0.293
+   ],
+   [
+    0.38,
+    0.463
+   ],
+   [
+    0.544,
+    0.598
+   ],
+   [
+    0.685,
+    0.809
+   ]
+  ],
+  "tramos_eje_R": [
+   [
+    0.0,
+    0.089
+   ]
+  ],
+  "anchura_brazo_R": [
+   0.345,
+   0.012,
+   0.009,
+   0.009,
+   0.009,
+   0.012,
+   0.083,
+   0.147,
+   0.282,
+   0.345,
+   0.345
+  ],
+  "puntos_cuadrante": [
+   {
+    "dx": -0.1829,
+    "dy": -0.193,
+    "r": 0.0292
+   },
+   {
+    "dx": -0.292,
+    "dy": -0.3063,
+    "r": 0.0429
+   },
+   {
+    "dx": -0.3997,
+    "dy": -0.4123,
+    "r": 0.0298
+   }
+  ]
+ },
+ "paso_entre_circulos_R": 1.9857,
+ "modulo_cuadrado": {
+  "regla": "medallón en el centro y cuartos de flor grande en las esquinas, tangentes en la diagonal (como en el suelo, donde los círculos se tocan)",
+  "lado_R": 2.8284,
+  "lado_px_en_la_foto": 983.0
+ }
+}

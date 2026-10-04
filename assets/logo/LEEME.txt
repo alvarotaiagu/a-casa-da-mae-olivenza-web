@@ -1,0 +1,31 @@
+LOGO DE A CASA DA MÃE: versión vectorial redibujada
+====================================================
+
+Origen: el JPG de redes (648_Marca-perfiles-redes-sociales-1.jpg, 2200×2000).
+Es un redibujo, no un calco. Del JPG se sacaron medidas y el símbolo se hizo con geometría:
+  - aro, 4 bolas, disco y 12 puntos: círculos medidos;
+  - flor: cuatro lóbulos que son arcos de círculo sobre los ejes (r 26,87; error de ajuste < 0,1 u);
+  - cruz: se dibujó UN octante con cúbicas de Bézier ajustadas al contorno medido. Luego se reflejó en la diagonal y se giró 4 veces (simetría D4).
+Scripts: scripts/logo-medir.py (medidas) y scripts/logo.py (genera los SVG, el IoU y la captura).
+
+Parecido con el original (IoU por color, en el JPG a su escala):
+  azul  0,967
+  verde 0,962
+  El techo con simetría perfecta es de 0,974 en azul y 0,963 en verde: el resto de la diferencia es el temblor del original.
+  Comparación: screenshots/logo-vs-png.png (rojo = solo original, cian = solo vector).
+
+Archivos
+  piezas.svg         Símbolo por capas para animar (pathLength=1), con los ids s-disco, s-flor, s-cruz, s-puntos, s-aro y s-bolas.
+                     s-flor va pintada en blanco: hay que darle el color del fondo de la página.
+  simbolo-*.svg      Símbolo plano con huecos de verdad (sirve sobre cualquier fondo): color, cal (#F7F5F0, para fondos oscuros #12304F) y tinta (#12304F).
+  logo-*.svg         Logo vertical (símbolo + texto en trazados, no hace falta la fuente): color, cal y tinta.
+  logo-horizontal-color.svg  Símbolo a la izquierda y texto a la derecha (referencia para la cabecera).
+  ../favicon.svg     Símbolo a color sobre un cuadrado de cal redondeado.
+
+Cambios hechos a propósito respecto al original
+  - El aro y las formas están limpios: se ha quitado el temblor del trazo a mano.
+  - Se han quitado las 4 estrellas.
+  - Pone «Olivenza · Olivença», con punto medio en vez de guion.
+  - El texto va en Sorts Mill Goudy (con kerning). La segunda línea lleva versalitas de verdad (smcp) con la inicial en mayúscula. «Olivenza · Olivença» va en un verde más oscuro (#2F7A3A) para que se lea bien.
+
+Pendiente: pedir a la propiedad el logo original en vectorial (AI, EPS, SVG o PDF). Si lo mandan, se usa ese en lugar de este.

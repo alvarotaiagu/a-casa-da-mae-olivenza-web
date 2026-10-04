@@ -1,0 +1,830 @@
+{
+ "fotos": [
+  {
+   "id": "boveda-salon-v",
+   "estancia": "salon",
+   "alt": "Salón comedor bajo bóvedas de ladrillo, con mesas redondas, sofá y lámpara de pie",
+   "origen": "ref/web/680_Foto-de-Maria-8.jpg",
+   "verticales": false,
+   "hero": true,
+   "w": 1200,
+   "h": 1600,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "boveda-salon",
+   "estancia": "salon",
+   "alt": "Salón comedor con bóvedas de ladrillo, mesas redondas y un aparador blanco",
+   "origen": "ref/web/112_principal-scaled.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 1747,
+   "anchos": [
+    480,
+    960,
+    1440,
+    1920
+   ]
+  },
+  {
+   "id": "boveda-mesa",
+   "estancia": "salon",
+   "alt": "Comedor bajo arcos de ladrillo, con mesas redondas, sillas blancas y suelo hidráulico azul",
+   "origen": "ref/web/663_Foto-de-Maria.jpg",
+   "verticales": false,
+   "w": 1200,
+   "h": 1600,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "salon-arco",
+   "estancia": "salon",
+   "alt": "Arco de ladrillo que da paso al salón comedor, con mesas redondas al fondo",
+   "origen": "ref/web/134_b426d1bc-b2c0-47c2-bef9-4803a3535350.jpg",
+   "verticales": false,
+   "w": 900,
+   "h": 1600,
+   "anchos": [
+    480,
+    900
+   ]
+  },
+  {
+   "id": "boveda-detalle",
+   "estancia": "salon",
+   "alt": "Detalle de la bóveda de ladrillo del salón",
+   "origen": "ref/web/195_06.jpg",
+   "verticales": false,
+   "w": 2199,
+   "h": 2199,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "hab-flores",
+   "estancia": "habitaciones",
+   "alt": "Dormitorio doble bajo bóveda de ladrillo, con papel pintado de flores y cabecero de rejilla",
+   "origen": "ref/web/214_30.jpg",
+   "verticales": false,
+   "w": 651,
+   "h": 651,
+   "anchos": [
+    480,
+    651
+   ]
+  },
+  {
+   "id": "hab-azul",
+   "estancia": "habitaciones",
+   "alt": "Dormitorio doble con colcha azul, cabecero de rejilla y el baño al fondo",
+   "origen": "ref/web/679_Foto-de-Maria-11.jpg",
+   "verticales": false,
+   "w": 1200,
+   "h": 1600,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "hab-toile-rojo",
+   "estancia": "habitaciones",
+   "alt": "Pared de un dormitorio con papel toile rojo, aplique de globo y cabecero de rejilla",
+   "origen": "ref/web/201_12.jpg",
+   "verticales": false,
+   "w": 1897,
+   "h": 1897,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "hab-armario",
+   "estancia": "habitaciones",
+   "alt": "Dormitorio bajo bóveda de ladrillo, con armario blanco de dos puertas",
+   "origen": "ref/web/213_29.jpg",
+   "verticales": true,
+   "w": 798,
+   "h": 821,
+   "anchos": [
+    480,
+    798
+   ]
+  },
+  {
+   "id": "bano-pb",
+   "estancia": "banos",
+   "alt": "Baño con ducha de mampara, espejo redondo y azulejo azul y blanco",
+   "origen": "ref/web/199_11-scaled.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "bano-ducha",
+   "estancia": "banos",
+   "alt": "Ducha con grifería dorada y pared de azulejo azul y blanco",
+   "origen": "ref/web/193_04.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "bano-corredera",
+   "estancia": "banos",
+   "alt": "Baño con puerta corredera, lavabo sobre balda de madera y espejo redondo",
+   "origen": "ref/web/204_17.jpg",
+   "verticales": false,
+   "w": 2180,
+   "h": 2180,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "bano-boveda",
+   "estancia": "banos",
+   "alt": "Baño bajo bóveda de ladrillo, con hornacina de azulejo azul y suelo de madera",
+   "origen": "ref/web/133_19323fd6-5487-4e0a-b2a6-d0c50c9506a8.jpg",
+   "verticales": false,
+   "w": 900,
+   "h": 1600,
+   "anchos": [
+    480,
+    900
+   ]
+  },
+  {
+   "id": "cocina",
+   "estancia": "cocina",
+   "alt": "Cocina común con muebles de madera, lavadora, lavavajillas y suelo hidráulico azul",
+   "origen": "ref/web/209_24.jpg",
+   "verticales": false,
+   "w": 900,
+   "h": 887,
+   "anchos": [
+    480,
+    900
+   ]
+  },
+  {
+   "id": "patio",
+   "estancia": "patio",
+   "alt": "Patio encalado con dos buganvillas, retablo de azulejo entre faroles y empedrado",
+   "origen": "ref/web/210_25.jpg",
+   "verticales": false,
+   "w": 748,
+   "h": 748,
+   "anchos": [
+    480,
+    748
+   ]
+  },
+  {
+   "id": "azulejo-cristo",
+   "estancia": "patio",
+   "alt": "Retablo de azulejo azul con Cristo cargando la cruz, entre dos faroles",
+   "origen": "ref/web/198_09.jpg",
+   "verticales": false,
+   "w": 2196,
+   "h": 2126,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "empedrado",
+   "estancia": "patio",
+   "alt": "Empedrado de piedra blanca y negra del patio",
+   "origen": "ref/web/196_07-scaled.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "arco-patio",
+   "estancia": "patio",
+   "alt": "Arco de ladrillo y puerta acristalada que da al patio con buganvillas",
+   "origen": "ref/web/197_10-scaled.jpg",
+   "verticales": false,
+   "w": 2363,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "reja-patio",
+   "estancia": "patio",
+   "alt": "Puerta al patio con reja de forja de monograma",
+   "origen": "ref/web/194_05-scaled.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "pasillo",
+   "estancia": "casa",
+   "alt": "Pasillo con suelo hidráulico azul y blanco, zócalo azul y arco al fondo",
+   "origen": "ref/web/687_Foto-de-Maria-7.jpg",
+   "verticales": true,
+   "w": 1200,
+   "h": 1691,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "recibidor",
+   "estancia": "casa",
+   "alt": "Pasillo con consola, lámpara de flecos y flores, bajo bóveda de ladrillo",
+   "origen": "ref/web/686_Foto-de-Maria-6.jpg",
+   "verticales": false,
+   "w": 1200,
+   "h": 1600,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "pasillo-entrada",
+   "estancia": "casa",
+   "alt": "Pasillo de la planta baja hacia la puerta de entrada de madera",
+   "origen": "ref/web/682_Foto-de-Maria-2.jpg",
+   "verticales": true,
+   "w": 1200,
+   "h": 1624,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "entrada",
+   "estancia": "casa",
+   "alt": "Puerta de madera abierta hacia el pasillo, bajo bóveda de ladrillo",
+   "origen": "ref/web/683_Foto-de-Maria-3.jpg",
+   "verticales": true,
+   "w": 1199,
+   "h": 1760,
+   "anchos": [
+    480,
+    960,
+    1199
+   ]
+  },
+  {
+   "id": "reja",
+   "estancia": "casa",
+   "alt": "Pasillo visto a través de una reja de forja",
+   "origen": "ref/web/689_Foto-de-Maria-9.jpg",
+   "verticales": false,
+   "w": 1200,
+   "h": 1600,
+   "anchos": [
+    480,
+    960,
+    1200
+   ]
+  },
+  {
+   "id": "fachada",
+   "estancia": "casa",
+   "alt": "Fachada encalada con reja de forja y placa de alojamiento",
+   "origen": "ref/web/690_Foto-de-Maria-14.jpg",
+   "verticales": false,
+   "w": 1600,
+   "h": 1200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calle",
+   "estancia": "casa",
+   "alt": "Calle encalada y empedrada, con la puerta de la casa a la izquierda",
+   "origen": "ref/web/692_Foto-de-Maria-16.jpg",
+   "verticales": false,
+   "w": 1600,
+   "h": 1200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "baldosa",
+   "estancia": "casa",
+   "alt": "Baldosa hidráulica azul y blanca del suelo, con flor de cuatro lóbulos",
+   "origen": "ref/web/202_16.jpg",
+   "verticales": false,
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-1",
+   "estancia": "magdalena",
+   "alt": "Salón con sofá verde, chimenea eléctrica y techo de ladrillo con vigas",
+   "origen": "ref/web/916_Magdalena1-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1476,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-2",
+   "estancia": "magdalena",
+   "alt": "Salón comedor con mesa redonda, chimenea eléctrica y alacena blanca",
+   "origen": "ref/web/917_Magdalena2-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1457,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-3",
+   "estancia": "magdalena",
+   "alt": "Baño con mueble de lavabo verde, ducha y azulejo de dibujo",
+   "origen": "ref/web/918_Magdalena3-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1462,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-4",
+   "estancia": "magdalena",
+   "alt": "Dormitorio con colcha de flores, armario blanco y ventana",
+   "origen": "ref/web/919_Magdalena4-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1475,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-5",
+   "estancia": "magdalena",
+   "alt": "Dormitorio con cabecero rosa y colcha de flores, bajo techo de ladrillo",
+   "origen": "ref/web/920_Magdalena5-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1462,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "magdalena-6",
+   "estancia": "magdalena",
+   "alt": "Cocina con horno, microondas, frigorífico y encimera de madera",
+   "origen": "ref/web/921_Magdalena6-scaled.jpg",
+   "verticales": true,
+   "w": 2400,
+   "h": 1503,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-1",
+   "estancia": "cadaval",
+   "alt": "Dormitorio con papel toile azul, cama de forja y vigas de madera",
+   "origen": "ref/web/907_Cadaval1.jpg",
+   "verticales": false,
+   "w": 2153,
+   "h": 1490,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-2",
+   "estancia": "cadaval",
+   "alt": "Salón con sofá azul oscuro, mesa de comedor y vigas de madera",
+   "origen": "ref/web/908_Cadaval2.jpg",
+   "verticales": true,
+   "w": 2153,
+   "h": 1530,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-3",
+   "estancia": "cadaval",
+   "alt": "Comedor con mesa de madera, estantería blanca y chimenea eléctrica",
+   "origen": "ref/web/909_Cadaval3.jpg",
+   "verticales": true,
+   "w": 2153,
+   "h": 1544,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-4",
+   "estancia": "cadaval",
+   "alt": "Salón con sofá, butacas blancas y mesa de comedor de madera",
+   "origen": "ref/web/910_Cadaval4.jpg",
+   "verticales": false,
+   "w": 2153,
+   "h": 1490,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-5",
+   "estancia": "cadaval",
+   "alt": "Dormitorio con camas individuales y papel de cuadros",
+   "origen": "ref/web/911_Cadaval5.jpg",
+   "verticales": true,
+   "w": 2153,
+   "h": 1521,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "cadaval-6",
+   "estancia": "cadaval",
+   "alt": "Cocina con muebles azul oscuro, campana y lavavajillas",
+   "origen": "ref/web/912_Cadaval6.jpg",
+   "verticales": true,
+   "w": 2153,
+   "h": 1528,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-1",
+   "estancia": "calvario",
+   "alt": "Cocina vista desde la puerta, con barra y taburetes",
+   "origen": "ref/web/925_Calvario1.jpg",
+   "verticales": true,
+   "w": 2127,
+   "h": 1416,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-2",
+   "estancia": "calvario",
+   "alt": "Salón con cocina abierta, barra, frigorífico y televisor",
+   "origen": "ref/web/926_Calvario2.jpg",
+   "verticales": true,
+   "w": 2127,
+   "h": 1438,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-3",
+   "estancia": "calvario",
+   "alt": "Dormitorio con colcha estampada y toallas naranjas",
+   "origen": "ref/web/927_Calvario3.jpg",
+   "verticales": true,
+   "w": 2127,
+   "h": 1470,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-4",
+   "estancia": "calvario",
+   "alt": "Dormitorio con cabecero capitoné blanco y pared terracota",
+   "origen": "ref/web/928_Calvario4.jpg",
+   "verticales": true,
+   "w": 2127,
+   "h": 1452,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-5",
+   "estancia": "calvario",
+   "alt": "Baño con espejo redondo, lavabo y ducha",
+   "origen": "ref/web/929_Calvario5.jpg",
+   "verticales": true,
+   "w": 2127,
+   "h": 1427,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "calvario-6",
+   "estancia": "calvario",
+   "alt": "Salón con papel pintado de flores, mesa y televisor",
+   "origen": "ref/web/930_Calvario6.jpg",
+   "verticales": false,
+   "w": 2127,
+   "h": 1389,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "maria-1",
+   "estancia": "maria",
+   "alt": "Salón con sofá amarillo, chimenea eléctrica y techo de ladrillo",
+   "origen": "ref/web/934_maria1.jpg",
+   "verticales": true,
+   "w": 1360,
+   "h": 912,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "maria-2",
+   "estancia": "maria",
+   "alt": "Baño con ducha y azulejo de dibujo azul y naranja",
+   "origen": "ref/web/935_maria2.jpg",
+   "verticales": false,
+   "w": 1360,
+   "h": 900,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "maria-3",
+   "estancia": "maria",
+   "alt": "Cocina con mesa alta, taburetes amarillos y suelo de baldosa",
+   "origen": "ref/web/936_maria3.jpg",
+   "verticales": true,
+   "w": 1360,
+   "h": 963,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "maria-4",
+   "estancia": "maria",
+   "alt": "Dormitorio con cabecero tapizado y papel pintado de ramas",
+   "origen": "ref/web/937_maria4.jpg",
+   "verticales": false,
+   "w": 1360,
+   "h": 900,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "maria-5",
+   "estancia": "maria",
+   "alt": "Dormitorio con litera blanca y armario",
+   "origen": "ref/web/938_maria5.jpg",
+   "verticales": false,
+   "w": 1360,
+   "h": 900,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "maria-6",
+   "estancia": "maria",
+   "alt": "Dormitorio con cama de matrimonio, toallas amarillas y papel de flores",
+   "origen": "ref/web/939_maria6.jpg",
+   "verticales": false,
+   "w": 1360,
+   "h": 900,
+   "anchos": [
+    480,
+    960,
+    1360
+   ]
+  },
+  {
+   "id": "placa-magdalena",
+   "estancia": "placas",
+   "alt": "Placa de azulejo pintada a mano con la iglesia y el nombre «La Magdalena»",
+   "origen": "ref/web/720_Foto-de-Maria-39.jpg",
+   "verticales": false,
+   "foco": "72% 52%",
+   "w": 1600,
+   "h": 1200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "placa-cadaval",
+   "estancia": "placas",
+   "alt": "Placa de azulejo pintada a mano: «Palacio los Duques de Cadaval», n.º 3",
+   "origen": "ref/web/723_Foto-de-Maria-42.jpg",
+   "verticales": false,
+   "foco": "50% 50%",
+   "w": 1600,
+   "h": 1200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "placa-calvario",
+   "estancia": "placas",
+   "alt": "Placa de azulejo pintada a mano: «Puerta del Calvario», n.º 4",
+   "origen": "ref/web/728_Foto-de-Maria-36.jpg",
+   "verticales": false,
+   "foco": "22% 52%",
+   "w": 1600,
+   "h": 1200,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "placa-santamaria",
+   "estancia": "placas",
+   "alt": "Placa de azulejo pintada a mano: «Santa María del Castillo»",
+   "origen": "ref/web/1435_santa-mariadel-castillo-web.jpg",
+   "verticales": false,
+   "foco": "58% 58%",
+   "w": 800,
+   "h": 600,
+   "anchos": [
+    480,
+    800
+   ]
+  },
+  {
+   "id": "placa-calle",
+   "estancia": "placas",
+   "alt": "Placa de azulejo de la calle: «Díaz Brito · Antiga Rua dos Oleiros»",
+   "origen": "ref/web/207_20-scaled.jpg",
+   "verticales": false,
+   "foco": "50% 50%",
+   "w": 2400,
+   "h": 2400,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "tejados",
+   "estancia": "alta",
+   "alt": "Tejados de teja y fachadas encaladas bajo el cielo azul",
+   "origen": "ref/web/307_04-1.webp",
+   "verticales": false,
+   "w": 1920,
+   "h": 1920,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "buhardilla",
+   "estancia": "alta",
+   "alt": "Techo inclinado con viga de madera y papel toile",
+   "origen": "ref/web/306_03.webp",
+   "verticales": false,
+   "w": 1920,
+   "h": 1920,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  },
+  {
+   "id": "toile-azul",
+   "estancia": "alta",
+   "alt": "Detalle del papel pintado toile azul de un apartamento",
+   "origen": "ref/web/313_Apartamento-scaled.webp",
+   "verticales": false,
+   "w": 1920,
+   "h": 1920,
+   "anchos": [
+    480,
+    960,
+    1440
+   ]
+  }
+ ]
+}
